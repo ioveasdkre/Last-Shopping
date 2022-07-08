@@ -1,0 +1,14 @@
+G:\ShoppingMall\backend\ShoppingMall\ShoppingMall.DataBase\bin\Debug\net6.0\ShoppingMall.DataBase.deps.json
+G:\ShoppingMall\backend\ShoppingMall\ShoppingMall.DataBase\bin\Debug\net6.0\ShoppingMall.DataBase.runtimeconfig.json
+G:\ShoppingMall\backend\ShoppingMall\ShoppingMall.DataBase\bin\Debug\net6.0\ShoppingMall.DataBase.dll
+G:\ShoppingMall\backend\ShoppingMall\ShoppingMall.DataBase\bin\Debug\net6.0\ShoppingMall.DataBase.pdb
+G:\ShoppingMall\backend\ShoppingMall\ShoppingMall.DataBase\obj\Debug\net6.0\ShoppingMall.DataBase.csproj.AssemblyReference.cache
+G:\ShoppingMall\backend\ShoppingMall\ShoppingMall.DataBase\obj\Debug\net6.0\ShoppingMall.DataBase.GeneratedMSBuildEditorConfig.editorconfig
+G:\ShoppingMall\backend\ShoppingMall\ShoppingMall.DataBase\obj\Debug\net6.0\ShoppingMall.DataBase.AssemblyInfoInputs.cache
+G:\ShoppingMall\backend\ShoppingMall\ShoppingMall.DataBase\obj\Debug\net6.0\ShoppingMall.DataBase.AssemblyInfo.cs
+G:\ShoppingMall\backend\ShoppingMall\ShoppingMall.DataBase\obj\Debug\net6.0\ShoppingMall.DataBase.csproj.CoreCompileInputs.cache
+G:\ShoppingMall\backend\ShoppingMall\ShoppingMall.DataBase\obj\Debug\net6.0\ShoppingMall.DataBase.dll
+G:\ShoppingMall\backend\ShoppingMall\ShoppingMall.DataBase\obj\Debug\net6.0\refint\ShoppingMall.DataBase.dll
+G:\ShoppingMall\backend\ShoppingMall\ShoppingMall.DataBase\obj\Debug\net6.0\ShoppingMall.DataBase.pdb
+G:\ShoppingMall\backend\ShoppingMall\ShoppingMall.DataBase\obj\Debug\net6.0\ShoppingMall.DataBase.genruntimeconfig.cache
+G:\ShoppingMall\backend\ShoppingMall\ShoppingMall.DataBase\obj\Debug\net6.0\ref\ShoppingMall.DataBase.dll
