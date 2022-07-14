@@ -1,0 +1,14 @@
+D:\personal\ShoppingMall\LastShopping\LastShopping.Database\obj\Debug\net6.0\LastShopping.Database.csproj.AssemblyReference.cache
+D:\personal\ShoppingMall\LastShopping\LastShopping.Database\obj\Debug\net6.0\LastShopping.Database.GeneratedMSBuildEditorConfig.editorconfig
+D:\personal\ShoppingMall\LastShopping\LastShopping.Database\obj\Debug\net6.0\LastShopping.Database.AssemblyInfoInputs.cache
+D:\personal\ShoppingMall\LastShopping\LastShopping.Database\obj\Debug\net6.0\LastShopping.Database.AssemblyInfo.cs
+D:\personal\ShoppingMall\LastShopping\LastShopping.Database\obj\Debug\net6.0\LastShopping.Database.csproj.CoreCompileInputs.cache
+D:\personal\ShoppingMall\LastShopping\LastShopping.Database\bin\Debug\net6.0\LastShopping.Database.deps.json
+D:\personal\ShoppingMall\LastShopping\LastShopping.Database\bin\Debug\net6.0\LastShopping.Database.runtimeconfig.json
+D:\personal\ShoppingMall\LastShopping\LastShopping.Database\bin\Debug\net6.0\LastShopping.Database.dll
+D:\personal\ShoppingMall\LastShopping\LastShopping.Database\bin\Debug\net6.0\LastShopping.Database.pdb
+D:\personal\ShoppingMall\LastShopping\LastShopping.Database\obj\Debug\net6.0\LastShopping.Database.dll
+D:\personal\ShoppingMall\LastShopping\LastShopping.Database\obj\Debug\net6.0\refint\LastShopping.Database.dll
+D:\personal\ShoppingMall\LastShopping\LastShopping.Database\obj\Debug\net6.0\LastShopping.Database.pdb
+D:\personal\ShoppingMall\LastShopping\LastShopping.Database\obj\Debug\net6.0\LastShopping.Database.genruntimeconfig.cache
+D:\personal\ShoppingMall\LastShopping\LastShopping.Database\obj\Debug\net6.0\ref\LastShopping.Database.dll
