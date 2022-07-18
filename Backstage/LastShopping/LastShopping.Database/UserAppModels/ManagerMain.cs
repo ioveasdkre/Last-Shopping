@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace LastShopping.Database.Models
+namespace LastShopping.Database.UserAppModels
 {
     /// <summary>管理者資料表</summary>
     [Index(nameof(Account))]
@@ -62,5 +62,6 @@ namespace LastShopping.Database.Models
         public int ManagerRoleId { get; set; }
         public ManagerRole ManagerRole { get; set; }
         public ICollection<ManagerLoginLog> ManagerLoginLogs { get; set; }
+        public ICollection<ManagerRefreshTokenLog> ManagerRefreshTokenLogs { get; set; }
     }
 }

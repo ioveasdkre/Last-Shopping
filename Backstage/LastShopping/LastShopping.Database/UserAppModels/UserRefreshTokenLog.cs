@@ -1,13 +1,13 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
 
-namespace LastShopping.Database.Models
+namespace LastShopping.Database.UserApp
 {
-    /// <summary>消費者Token紀錄表</summary>
+    /// <summary>使用者Token紀錄表</summary>
     [Index(nameof(UserId))]
     public class UserRefreshTokenLog
     {
-        /// <summary>消費者Token紀錄</summary>
+        /// <summary>使用者Token紀錄</summary>
         [Display(Name = "Token紀錄")]
         [Key]
         public string RefreshToken { get; set; }
@@ -20,8 +20,8 @@ namespace LastShopping.Database.Models
         [Required]
         public DateTime ExpirationDate { get; set; }
 
-        /// <summary>消費者Id</summary>
-        [Display(Name = "消費者Id")]
+        /// <summary>使用者Id</summary>
+        [Display(Name = "使用者Id")]
         [Required]
         public int UserId { get; set; }
         public UserMain UserMain { get; set; }

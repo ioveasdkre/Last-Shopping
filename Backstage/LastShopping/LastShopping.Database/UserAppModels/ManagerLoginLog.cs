@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace LastShopping.Database.Models
+namespace LastShopping.Database.UserAppModels
 {
     /// <summary>管理者登入紀錄表</summary>
     [Index(nameof(ManagerId))]

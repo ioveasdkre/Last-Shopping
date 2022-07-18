@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
 
-namespace LastShopping.Database.Models
+namespace LastShopping.Database.UserAppModels
 {
     /// <summary>管理者Token紀錄表</summary>
     [Index(nameof(ManagerId))]
@@ -24,6 +24,6 @@ namespace LastShopping.Database.Models
         [Display(Name = "管理者Id")]
         [Required]
         public int ManagerId { get; set; }
-        public virtual ManagerMain ManagerMain { get; set; }
+        public ManagerMain ManagerMain { get; set; }
     }
 }

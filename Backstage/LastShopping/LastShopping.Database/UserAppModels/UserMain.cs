@@ -2,14 +2,14 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace LastShopping.Database.Models
+namespace LastShopping.Database.UserApp
 {
     /// <summary>消費者資料表</summary>
     [Index(nameof(Account))]
     public class UserMain
     {
         /// <summary>消費者Id</summary>
-        [Display(Name = "消費者Id")]
+        [Display(Name = "Id")]
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int UserId { get; set; }
@@ -46,14 +46,12 @@ namespace LastShopping.Database.Models
         [Display(Name = "帳號是否開啟")]
         [Required]
         public bool Flag { get; set; }
-        /// <summary>電報功能</summary>
-        [Display(Name = "電報功能")]
-        [Required]
-        public bool Cable { get; set; }
-        /// <summary>隱私權</summary>
-        [Display(Name = "隱私權")]
-        [Required]
-        public bool Privacy { get; set; }
+        //[Display(Name = "電報功能")]
+        //[Required]
+        //public bool Cable { get; set; }
+        //[Display(Name = "隱私權")]
+        //[Required]
+        //public bool Privacy { get; set; }
         /// <summary>帳號建立時間</summary>
         [Display(Name = "建立時間")]
         [Required]
@@ -64,6 +62,5 @@ namespace LastShopping.Database.Models
 
         public ICollection<UserLoginLog> UserLoginLogs { get; set; }
         public ICollection<UserRefreshTokenLog> UserRefreshTokenLogs { get; set; }
-        public ICollection<SalesOrder> SalesOrders { get; set; }
     }
 }

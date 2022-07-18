@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace LastShopping.Database.Models
+namespace LastShopping.Database.UserAppModels
 {
     /// <summary>路由控制表</summary>
     public class Router

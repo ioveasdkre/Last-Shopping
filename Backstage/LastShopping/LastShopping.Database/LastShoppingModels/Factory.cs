@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace LastShopping.Database.Models
+namespace LastShopping.Database.LastShoppingModels
 {
     /// <summary>廠商資訊</summary>
     public class Factory

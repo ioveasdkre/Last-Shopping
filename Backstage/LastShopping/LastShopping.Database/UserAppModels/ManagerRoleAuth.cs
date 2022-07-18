@@ -1,8 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using LastShopping.Database.LastShoppingModels;
+using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace LastShopping.Database.Models
+namespace LastShopping.Database.UserAppModels
 {
     /// <summary>管理者身分權限表</summary>
     [Index(nameof(ManagerRoleId))]

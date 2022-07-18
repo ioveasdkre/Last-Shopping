@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace LastShopping.Database.Models
+namespace LastShopping.Database.LastShoppingModels
 {
     /// <summary>銷售訂單表</summary>
     [Index(nameof(UserId))]
@@ -25,6 +25,5 @@ namespace LastShopping.Database.Models
         [Display(Name = "消費者Id")]
         [Required]
         public int UserId { get; set; }
-        public UserMain UserMain { get; set; }
     }
 }

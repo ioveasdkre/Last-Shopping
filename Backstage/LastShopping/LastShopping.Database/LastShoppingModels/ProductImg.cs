@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace LastShopping.Database.Models
+namespace LastShopping.Database.LastShoppingModels
 {
     /// <summary>產品圖片</summary>
     [Index(nameof(ProductInformationId))]

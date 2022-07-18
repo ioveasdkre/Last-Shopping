@@ -1,4 +1,5 @@
-﻿using LastShopping.Database.Models;
+﻿using LastShopping.Database.LastShoppingModels;
+using LastShopping.Database.Models;
 using LastShopping.Database.Models.Enum;
 using Microsoft.EntityFrameworkCore;
 
@@ -10,14 +11,8 @@ namespace LastShopping.Database.DbContextModel
         {
         }
 
-        public DbSet<UserMain> UserMain { get; set; }
-        public DbSet<UserLoginLog> UserLoginLogs { get; set; }
-        public DbSet<UserRefreshTokenLog> UserRefreshTokenLogs { get; set; }
-        public DbSet<ManagerMain> ManagerMain { get; set; }
         public DbSet<ManagerRole> ManagerRole { get; set; }
         public DbSet<ManagerRoleAuth> ManagerRoleAuths { get; set; }
-        public DbSet<ManagerLoginLog> ManagerLoginLogs { get; set; }
-        public DbSet<ManagerRefreshTokenLog> ManagerRefreshTokenLogs { get; set; }
         public DbSet<Router> Router { get; set; }
         public DbSet<ProductType> ProductType { get; set; }
         public DbSet<ProductImg> ProductImgs { get; set; }
@@ -30,12 +25,8 @@ namespace LastShopping.Database.DbContextModel
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<UserRefreshTokenLog>()
-                .HasKey(a => new { a.RefreshToken, a.UserId });
             modelBuilder.Entity<ManagerRoleAuth>()
                 .HasKey(a => new { a.RouterId, a.ManagerRoleId });
-            modelBuilder.Entity<ManagerRefreshTokenLog>()
-                .HasKey(a => new { a.RefreshToken, a.ManagerId });
             modelBuilder.Entity<SalesOrderDetails>()
                 .HasKey(a => new { a.OrderId, a.ProductInformationId });
             modelBuilder.Entity<PurchaseOrderDetails>()

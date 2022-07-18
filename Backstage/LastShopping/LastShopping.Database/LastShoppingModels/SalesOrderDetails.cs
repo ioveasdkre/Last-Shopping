@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
 
-namespace LastShopping.Database.Models
+namespace LastShopping.Database.LastShoppingModels
 {
     /// <summary>銷售訂單明細表</summary>
     [Index(nameof(OrderId))]
