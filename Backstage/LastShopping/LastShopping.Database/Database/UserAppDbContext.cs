@@ -1,7 +1,7 @@
 ﻿using LastShopping.Database.UserAppModels;
 using Microsoft.EntityFrameworkCore;
 
-namespace LastShopping.Database.Database
+namespace LastShopping.Database.DbContextModel
 {
     public class UserAppDbContext : DbContext
     {

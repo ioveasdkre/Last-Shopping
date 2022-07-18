@@ -21,8 +21,8 @@ namespace LastShopping.Database.LastShoppingModels
         [Display(Name = "修改時間")]
         public DateTime? ModifyDate { get; set; }
 
-        /// <summary>消費者Id</summary>
-        [Display(Name = "消費者Id")]
+        /// <summary>使用者Id</summary>
+        [Display(Name = "使用者Id")]
         [Required]
         public int UserId { get; set; }
     }
