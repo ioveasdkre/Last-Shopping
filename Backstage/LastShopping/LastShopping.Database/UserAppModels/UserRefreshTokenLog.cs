@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
 
-namespace LastShopping.Database.UserApp
+namespace LastShopping.Database.UserAppModels
 {
     /// <summary>使用者Token紀錄表</summary>
     [Index(nameof(UserId))]

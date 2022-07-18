@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace LastShopping.Database.UserApp
+namespace LastShopping.Database.UserAppModels
 {
     /// <summary>消費者資料表</summary>
     [Index(nameof(Account))]

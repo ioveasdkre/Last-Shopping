@@ -11,9 +11,6 @@ namespace LastShopping.Database.DbContextModel
         {
         }
 
-        public DbSet<ManagerRole> ManagerRole { get; set; }
-        public DbSet<ManagerRoleAuth> ManagerRoleAuths { get; set; }
-        public DbSet<Router> Router { get; set; }
         public DbSet<ProductType> ProductType { get; set; }
         public DbSet<ProductImg> ProductImgs { get; set; }
         public DbSet<ProductInformation> ProductInformation { get; set; }
@@ -25,8 +22,6 @@ namespace LastShopping.Database.DbContextModel
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<ManagerRoleAuth>()
-                .HasKey(a => new { a.RouterId, a.ManagerRoleId });
             modelBuilder.Entity<SalesOrderDetails>()
                 .HasKey(a => new { a.OrderId, a.ProductInformationId });
             modelBuilder.Entity<PurchaseOrderDetails>()
