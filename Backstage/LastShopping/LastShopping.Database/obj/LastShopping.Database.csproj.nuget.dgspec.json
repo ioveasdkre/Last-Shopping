@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\personal\\ShoppingMall\\LastShopping\\LastShopping.Database\\LastShopping.Database.csproj": {}
+    "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping.Database\\LastShopping.Database.csproj": {}
   },
   "projects": {
-    "D:\\personal\\ShoppingMall\\LastShopping\\LastShopping.Database\\LastShopping.Database.csproj": {
+    "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping.Database\\LastShopping.Database.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\personal\\ShoppingMall\\LastShopping\\LastShopping.Database\\LastShopping.Database.csproj",
+        "projectUniqueName": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping.Database\\LastShopping.Database.csproj",
         "projectName": "LastShopping.Database",
-        "projectPath": "D:\\personal\\ShoppingMall\\LastShopping\\LastShopping.Database\\LastShopping.Database.csproj",
+        "projectPath": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping.Database\\LastShopping.Database.csproj",
         "packagesPath": "C:\\Users\\ioveasdkre\\.nuget\\packages\\",
-        "outputPath": "D:\\personal\\ShoppingMall\\LastShopping\\LastShopping.Database\\obj\\",
+        "outputPath": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping.Database\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
