@@ -17,6 +17,7 @@ namespace LastShopping.Database.DbContextModel
         public DbSet<ManagerRefreshTokenLog> ManagerRefreshTokenLogs { get; set; }
         public DbSet<ManagerRole> ManagerRole { get; set; }
         public DbSet<ManagerRoleAuth> ManagerRoleAuths { get; set; }
+        public DbSet<ManagerRouter> ManagerRouter { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

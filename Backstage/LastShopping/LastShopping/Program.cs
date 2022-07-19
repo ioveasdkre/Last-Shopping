@@ -5,6 +5,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContextPool<LastShoppingDbContext>(
     o => o.UseSqlServer(builder.Configuration.GetConnectionString("LastShoppingDb")));
+
 builder.Services.AddDbContextPool<UserAppDbContext>(
     o => o.UseSqlServer(builder.Configuration.GetConnectionString("UserAppDb")));
 

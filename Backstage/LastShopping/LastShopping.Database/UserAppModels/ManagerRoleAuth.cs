@@ -19,7 +19,7 @@ namespace LastShopping.Database.UserAppModels
         [Display(Name = "路由ID")]
         [Required]
         public int RouterId { get; set; }
-        public Router Router { get; set; }
+        public ManagerRouter Router { get; set; }
 
         /// <summary>瀏覽權限</summary>
         [Display(Name = "瀏覽權限")]

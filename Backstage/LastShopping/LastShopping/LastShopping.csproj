@@ -21,6 +21,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\LastShopping.Database\LastShopping.Database.csproj" />
+    <ProjectReference Include="..\LastShopping.Services\LastShopping.Services.csproj" />
   </ItemGroup>
 
 </Project>

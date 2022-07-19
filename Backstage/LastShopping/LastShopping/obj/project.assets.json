@@ -867,6 +867,16 @@
         "runtime": {
           "bin/placeholder/LastShopping.Database.dll": {}
         }
+      },
+      "LastShopping.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/LastShopping.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LastShopping.Services.dll": {}
+        }
       }
     }
   },
@@ -2363,11 +2373,17 @@
       "type": "project",
       "path": "../LastShopping.Database/LastShopping.Database.csproj",
       "msbuildProject": "../LastShopping.Database/LastShopping.Database.csproj"
+    },
+    "LastShopping.Services/1.0.0": {
+      "type": "project",
+      "path": "../LastShopping.Services/LastShopping.Services.csproj",
+      "msbuildProject": "../LastShopping.Services/LastShopping.Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "LastShopping.Database >= 1.0.0",
+      "LastShopping.Services >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.7",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.7",
       "Microsoft.EntityFrameworkCore.Sqlite >= 6.0.7",
@@ -2409,6 +2425,9 @@
           "projectReferences": {
             "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping.Database\\LastShopping.Database.csproj": {
               "projectPath": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping.Database\\LastShopping.Database.csproj"
+            },
+            "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping.Services\\LastShopping.Services.csproj": {
+              "projectPath": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping.Services\\LastShopping.Services.csproj"
             }
           }
         }

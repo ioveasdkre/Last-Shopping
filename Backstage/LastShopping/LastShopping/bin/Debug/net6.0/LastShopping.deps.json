@@ -9,6 +9,7 @@
       "LastShopping/1.0.0": {
         "dependencies": {
           "LastShopping.Database": "1.0.0",
+          "LastShopping.Services": "1.0.0",
           "Microsoft.EntityFrameworkCore.Design": "6.0.7",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.7",
           "Microsoft.EntityFrameworkCore.Sqlite": "6.0.7",
@@ -615,6 +616,11 @@
         "runtime": {
           "LastShopping.Database.dll": {}
         }
+      },
+      "LastShopping.Services/1.0.0": {
+        "runtime": {
+          "LastShopping.Services.dll": {}
+        }
       }
     }
   },
@@ -1010,6 +1016,11 @@
       "hashPath": "system.windows.extensions.4.7.0.nupkg.sha512"
     },
     "LastShopping.Database/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LastShopping.Services/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

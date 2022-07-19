@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace LastShopping.Database.UserAppModels
 {
     /// <summary>路由控制表</summary>
-    public class Router
+    public class ManagerRouter
     {
         /// <summary>路由Id</summary>
         [Display(Name = "路由Id")]
