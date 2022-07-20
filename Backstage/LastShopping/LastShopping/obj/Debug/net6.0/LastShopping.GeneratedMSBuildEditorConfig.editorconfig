@@ -8,37 +8,37 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = LastShopping
 build_property.RootNamespace = LastShopping
-build_property.ProjectDir = D:\personal\LastShopping\Backstage\LastShopping\LastShopping\
+build_property.ProjectDir = d:\personal\LastShopping\Backstage\LastShopping\LastShopping\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\personal\LastShopping\Backstage\LastShopping\LastShopping
+build_property.MSBuildProjectDirectory = d:\personal\LastShopping\Backstage\LastShopping\LastShopping
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/personal/LastShopping/Backstage/LastShopping/LastShopping/Views/Home/Index.cshtml]
+[d:/personal/LastShopping/Backstage/LastShopping/LastShopping/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/personal/LastShopping/Backstage/LastShopping/LastShopping/Views/Home/Privacy.cshtml]
+[d:/personal/LastShopping/Backstage/LastShopping/LastShopping/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/personal/LastShopping/Backstage/LastShopping/LastShopping/Views/Shared/Error.cshtml]
+[d:/personal/LastShopping/Backstage/LastShopping/LastShopping/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/personal/LastShopping/Backstage/LastShopping/LastShopping/Views/Shared/_ValidationScriptsPartial.cshtml]
+[d:/personal/LastShopping/Backstage/LastShopping/LastShopping/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/personal/LastShopping/Backstage/LastShopping/LastShopping/Views/_ViewImports.cshtml]
+[d:/personal/LastShopping/Backstage/LastShopping/LastShopping/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/personal/LastShopping/Backstage/LastShopping/LastShopping/Views/_ViewStart.cshtml]
+[d:/personal/LastShopping/Backstage/LastShopping/LastShopping/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/personal/LastShopping/Backstage/LastShopping/LastShopping/Views/Shared/_Layout.cshtml]
+[d:/personal/LastShopping/Backstage/LastShopping/LastShopping/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-92mz63gd8l
