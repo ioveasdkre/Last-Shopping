@@ -2,6 +2,8 @@
 
 namespace LastShopping.Database.Models.Enum
 {
+    #region enum OrderStatus [ 訂單狀態 ]
+    /// <summary>訂單狀態</summary>
     public enum OrderStatus
     {
         /// <summary>成立訂單</summary>
@@ -35,4 +37,5 @@ namespace LastShopping.Database.Models.Enum
         [Display(Name = "已退款")]
         已退款 = 9
     }
+    #endregion
 }

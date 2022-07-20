@@ -12,12 +12,10 @@ namespace LastShopping.Controllers
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
-        }
+        }   
 
         public IActionResult Index()
         {
-            var test = EncryptUtils.AESEncrypt("我需要加密我需要加密我需要加密我需要加密我需要加密", "我跟你說你不要跟別人說，你若跟別人說，不要跟別人說是我叫你不要跟別人說", "gwgwg156116dg548964adga");
-            var test2 = EncryptUtils.SHA256Encrypt("fwfwfwf");
             return View();
         }
 
