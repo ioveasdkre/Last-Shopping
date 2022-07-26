@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace LastShopping.Services.Enum
 {
+    /// <summary>加密列舉</summary>
     public class EncryptEnum
     {
+        #region CiphertextType [ 加密類型 ]
         /// <summary>加密類型</summary>
         public enum CiphertextType
         {
@@ -19,5 +16,6 @@ namespace LastShopping.Services.Enum
             [Display(Name = "16進制字符串")]
             Hex = 1
         }
+        #endregion
     }
 }

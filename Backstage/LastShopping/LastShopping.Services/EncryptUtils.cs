@@ -7,30 +7,30 @@ namespace LastShopping.Services
     /// <summary>加解密工具</summary>
     public class EncryptUtils
     {
+        #region [ 初始化 ]
+        /// <summary>加密</summary>
         private static byte[] Encrypt { get; set; }
+        /// <summary>解密</summary>
         private static string Decrypt { get; set; }
+        public static readonly string AesKey = AppSettingsUtils.GetAppSettingsValue("AES", "Key");
+        public static readonly string AesIv = AppSettingsUtils.GetAppSettingsValue("AES", "Iv");
+        #endregion
 
         #region SHA256Encrypt [ SHA256雜湊加密 ]
         /// <summary>SHA256雜湊加密</summary>
         /// <param name="text">本文</param>
         /// <returns></returns>
-        public static (bool isSuccess, string text) SHA256Encrypt(string text)
+        public static string SHA256Encrypt(string text, bool aesEncrypt = false, CiphertextType ciphertextType = CiphertextType.Base64)
         {
-            try
-            {
-                // 判斷 字串為 null or ""
-                if (string.IsNullOrEmpty(text))
-                    return (false, ""); // 空字串
+            byte[] bytes = Encoding.UTF8.GetBytes(text); // 轉換 UTF8編碼
+            byte[] hash = SHA256.Create().ComputeHash(bytes); // SHA256 雜湊加密
 
-                byte[] bytes = Encoding.UTF8.GetBytes(text); // 轉換 UTF8編碼
-                byte[] hash = SHA256.Create().ComputeHash(bytes); // SHA256 雜湊加密
-
-                return (true, Convert.ToBase64String(hash)); // 8位元 轉 Base64字串
-            }
-            catch (Exception ex)
+            if (aesEncrypt)
             {
-                return (false, ex.Message);
+                return AESEncrypt(CipherByteArrayToString(hash, ciphertextType), AesKey, AesIv);
             }
+
+;            return CipherByteArrayToString(hash, ciphertextType); // 8位元 轉 Base64字串
         }
         #endregion
 
@@ -43,50 +43,40 @@ namespace LastShopping.Services
         /// <param name="padding">填充模式</param>
         /// <param name="mode">加密模式</param>
         /// <param name="ciphertextType">密文類型</param>
-        /// <returns>
-        /// isSuccess: true or false
-        /// <para>text: 加密本文 or 錯誤訊息</para>
-        /// </returns>
-        public static (bool isSuccess, string text) AESEncrypt(string plainText, string key, string iv, PaddingMode padding = PaddingMode.PKCS7, CipherMode mode = CipherMode.CBC, CiphertextType ciphertextType = CiphertextType.Base64)
+        /// <returns>string 加密本文</returns>
+        public static string AESEncrypt(string plainText, string key, string iv, PaddingMode padding = PaddingMode.PKCS7, CipherMode mode = CipherMode.CBC, CiphertextType ciphertextType = CiphertextType.Base64)
         {
-            try
+            using (Aes aesAlg = Aes.Create()) // 建立 Aes對稱演算法的密碼編譯物件
             {
-                using (Aes aesAlg = Aes.Create()) // 建立 Aes對稱演算法的密碼編譯物件
+                // Base64: 128 = 16 bytes, 192 = 24 bytes, 256 = 32 bytes
+                // HEX: 128 = 32 (0-9 A-F), 192 = 48 (0-9 A-F), 256 = 64 (0-9 A-F)
+                aesAlg.KeySize = 256; // 對稱演算法使用之秘密金鑰的大小，以位元為單位
+                aesAlg.BlockSize = 128; // 密碼編譯作業的區塊大小，以位元為單位
+                aesAlg.Padding = padding; // 對稱演算法中使用的填補模式,預設 PKCS7
+                aesAlg.Mode = mode; // 對稱演算法的作業模式,預設 CBC
+
+                // SHA256 32位元
+                // MD5 16位元
+                aesAlg.Key = SHA256.Create().ComputeHash(Encoding.UTF8.GetBytes(key)); // 對稱演算法的秘密金鑰
+                aesAlg.IV = MD5.Create().ComputeHash(Encoding.UTF8.GetBytes(iv)); // 對稱演算法的初始化向量，如果沒有設置默認的16個0
+
+                ICryptoTransform encryptor = aesAlg.CreateEncryptor(); // 建立對稱 AES加密子物件
+
+                using (MemoryStream msEncrypt = new()) // 存放區為記憶體的資料流
                 {
-                    // Base64: 128 = 16 bytes, 192 = 24 bytes, 256 = 32 bytes
-                    // HEX: 128 = 32 (0-9 A-F), 192 = 48 (0-9 A-F), 256 = 64 (0-9 A-F)
-                    aesAlg.KeySize = 256; // 對稱演算法使用之秘密金鑰的大小，以位元為單位
-                    aesAlg.BlockSize = 128; // 密碼編譯作業的區塊大小，以位元為單位
-                    aesAlg.Padding = padding; // 對稱演算法中使用的填補模式,預設 PKCS7
-                    aesAlg.Mode = mode; // 對稱演算法的作業模式,預設 CBC
-
-                    // SHA256 32位元
-                    // MD5 16位元
-                    aesAlg.Key = SHA256.Create().ComputeHash(Encoding.UTF8.GetBytes(key)); // 對稱演算法的秘密金鑰
-                    aesAlg.IV = MD5.Create().ComputeHash(Encoding.UTF8.GetBytes(iv)); // 對稱演算法的初始化向量，如果沒有設置默認的16個0
-
-                    ICryptoTransform encryptor = aesAlg.CreateEncryptor(); // 建立對稱 AES加密子物件
-
-                    using (MemoryStream msEncrypt = new()) // 存放區為記憶體的資料流
+                    using (CryptoStream csEncrypt = new(msEncrypt, encryptor, CryptoStreamMode.Write)) // 定義連結資料流與密碼編譯轉換的資料流
                     {
-                        using (CryptoStream csEncrypt = new(msEncrypt, encryptor, CryptoStreamMode.Write)) // 定義連結資料流與密碼編譯轉換的資料流
+                        using (StreamWriter swEncrypt = new(csEncrypt)) // 實作以特定的編碼方式將字元寫入位元組資料流的 TextWriter
                         {
-                            using (StreamWriter swEncrypt = new(csEncrypt)) // 實作以特定的編碼方式將字元寫入位元組資料流的 TextWriter
-                            {
-                                swEncrypt.Write(plainText); // 寫入資料至資料流。
-                            }
-
-                            Encrypt = msEncrypt.ToArray(); // 將資料流內容寫入陣列
+                            swEncrypt.Write(plainText); // 寫入資料至資料流。
                         }
+
+                        Encrypt = msEncrypt.ToArray(); // 將資料流內容寫入陣列
                     }
                 }
             }
-            catch (Exception ex)
-            {
-                return (false, ex.Message);
-            }
 
-            return (true, CipherByteArrayToString(Encrypt, ciphertextType));
+            return CipherByteArrayToString(Encrypt, ciphertextType);
         }
         #endregion
 
@@ -94,7 +84,7 @@ namespace LastShopping.Services
         /// <summary>通過加密的 Byte數組返回加密後的密文</summary>
         /// <param name="cipherByte">加密位元</param>
         /// <param name="ciphertextType">加密類型</param>
-        /// <returns>加密資料</returns>
+        /// <returns>string 加密資料</returns>
         public static string CipherByteArrayToString(byte[] cipherByte, CiphertextType ciphertextType)
         {
             string ciphertext = ""; // 儲存密鑰
@@ -142,46 +132,36 @@ namespace LastShopping.Services
         /// <param name="padding">填充模式</param>
         /// <param name="mode">加密模式</param>
         /// <param name="ciphertextType">密文類型</param>
-        /// <returns>
-        /// isSuccess: true or false
-        /// <para>text: 解密本文 or 錯誤訊息</para>
-        /// </returns>
-        public static (bool isSuccess, string text) AESDecrypt(string cipherText, string key, string iv = "", PaddingMode padding = PaddingMode.PKCS7, CipherMode mode = CipherMode.CBC, CiphertextType ciphertextType = CiphertextType.Base64)
+        /// <returns>string 解密本文</returns>
+        public static string AESDecrypt(string cipherText, string key, string iv = "", PaddingMode padding = PaddingMode.PKCS7, CipherMode mode = CipherMode.CBC, CiphertextType ciphertextType = CiphertextType.Base64)
         {
-            try
+            using (Aes aesAlg = Aes.Create()) // 建立 Aes對稱演算法的密碼編譯物件
             {
-                using (Aes aesAlg = Aes.Create()) // 建立 Aes對稱演算法的密碼編譯物件
+                byte[] cipherByte = CiphertextStringToByteArray(cipherText, ciphertextType);
+
+                aesAlg.KeySize = 256;//秘钥的大小，以位为单位,128,256等
+                aesAlg.BlockSize = 128;//支持的块大小
+                aesAlg.Padding = padding;//填充模式
+                aesAlg.Mode = mode;
+                // SHA256 32位元
+                // MD5 16位元
+                aesAlg.Key = SHA256.Create().ComputeHash(Encoding.UTF8.GetBytes(key)); // 對稱演算法的秘密金鑰
+                aesAlg.IV = MD5.Create().ComputeHash(Encoding.UTF8.GetBytes(iv)); // 對稱演算法的初始化向量，如果沒有設置默認的16個0
+
+                ICryptoTransform decryptor = aesAlg.CreateDecryptor(); //建立對稱 AES解密子物件
+
+                using (MemoryStream msDecrypt = new(cipherByte)) // 存放區為記憶體的資料流
                 {
-                    byte[] cipherByte = CiphertextStringToByteArray(cipherText, ciphertextType);
-
-                    aesAlg.KeySize = 256;//秘钥的大小，以位为单位,128,256等
-                    aesAlg.BlockSize = 128;//支持的块大小
-                    aesAlg.Padding = padding;//填充模式
-                    aesAlg.Mode = mode;
-                    // SHA256 32位元
-                    // MD5 16位元
-                    aesAlg.Key = SHA256.Create().ComputeHash(Encoding.UTF8.GetBytes(key)); // 對稱演算法的秘密金鑰
-                    aesAlg.IV = MD5.Create().ComputeHash(Encoding.UTF8.GetBytes(iv)); // 對稱演算法的初始化向量，如果沒有設置默認的16個0
-
-                    ICryptoTransform decryptor = aesAlg.CreateDecryptor(); //建立對稱 AES解密子物件
-
-                    using (MemoryStream msDecrypt = new(cipherByte)) // 存放區為記憶體的資料流
+                    using (CryptoStream csDecrypt = new(msDecrypt, decryptor, CryptoStreamMode.Read)) // 實作以特定的編碼方式將字元寫入位元組資料流的 TextWriter
                     {
-                        using (CryptoStream csDecrypt = new(msDecrypt, decryptor, CryptoStreamMode.Read)) // 實作以特定的編碼方式將字元寫入位元組資料流的 TextWriter
+                        using (StreamReader srDecrypt = new(csDecrypt)) // 實作以特定的編碼方式將字元寫入位元組資料流的 TextWriter
                         {
-                            using (StreamReader srDecrypt = new(csDecrypt)) // 實作以特定的編碼方式將字元寫入位元組資料流的 TextWriter
-                            {
-                                Decrypt = srDecrypt.ReadToEnd(); // 從解密流中讀取解密的字節並將它們放在一個字符串中。
-                            }
+                            Decrypt = srDecrypt.ReadToEnd(); // 從解密流中讀取解密的字節並將它們放在一個字符串中。
                         }
                     }
                 }
             }
-            catch (Exception ex)
-            {
-                return (false, ex.Message);
-            }
-            return (true, Decrypt);
+            return Decrypt;
         }
         #endregion
 
@@ -189,7 +169,7 @@ namespace LastShopping.Services
         /// <summary>通過密文返回加密 Byte數組</summary>
         /// <param name="ciphertext">加密字串</param>
         /// <param name="ciphertextType">加密類型</param>
-        /// <returns>加密 Byte[]</returns>
+        /// <returns>Byte[] 加密</returns>
         public static byte[] CiphertextStringToByteArray(string ciphertext, CiphertextType ciphertextType)
         {
             byte[] cipherByte;
@@ -212,7 +192,7 @@ namespace LastShopping.Services
         #region HexStringToByteArray [ Base64String 轉 HexString ]
         /// <summary>Base64String 轉 HexString</summary>
         /// <param name="hexContent">hex加密字串</param>
-        /// <returns>加密 Byte[]</returns>
+        /// <returns>Byte[] 加密</returns>
         public static byte[] HexStringToByteArray(string hexContent)
         {
             hexContent = hexContent.Replace(" ", ""); // Replace(取代來源, 取代目標)

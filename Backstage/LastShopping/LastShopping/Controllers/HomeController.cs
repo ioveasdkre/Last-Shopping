@@ -16,6 +16,8 @@ namespace LastShopping.Controllers
 
         public IActionResult Index()
         {
+            var test = EncryptUtils.SHA256Encrypt("tgewgsdg", true);
+            Guid guid = Guid.NewGuid();
             return View();
         }
 
