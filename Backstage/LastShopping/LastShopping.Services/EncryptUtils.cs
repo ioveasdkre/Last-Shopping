@@ -80,6 +80,48 @@ namespace LastShopping.Services
         }
         #endregion
 
+        #region AESDecrypt [ AES對稱解密 ]
+        /// <summary>AES解密</summary>
+        /// <param name="cipherText">本文</param>
+        /// <param name="key">密鑰</param>
+        /// <param name="iv">初始向量</param>
+        /// <param name="padding">填充模式</param>
+        /// <param name="mode">加密模式</param>
+        /// <param name="ciphertextType">密文類型</param>
+        /// <returns>string 解密本文</returns>
+        public static string AESDecrypt(string cipherText, string key, string iv = "", PaddingMode padding = PaddingMode.PKCS7, CipherMode mode = CipherMode.CBC, CiphertextType ciphertextType = CiphertextType.Base64)
+        {
+            using (Aes aesAlg = Aes.Create()) // 建立 Aes對稱演算法的密碼編譯物件
+            {
+                byte[] cipherByte = CiphertextStringToByteArray(cipherText, ciphertextType);
+
+                aesAlg.KeySize = 256;//秘钥的大小，以位为单位,128,256等
+                aesAlg.BlockSize = 128;//支持的块大小
+                aesAlg.Padding = padding;//填充模式
+                aesAlg.Mode = mode;
+                // SHA256 32位元
+                // MD5 16位元
+                aesAlg.Key = SHA256.Create().ComputeHash(Encoding.UTF8.GetBytes(key)); // 對稱演算法的秘密金鑰
+                aesAlg.IV = MD5.Create().ComputeHash(Encoding.UTF8.GetBytes(iv)); // 對稱演算法的初始化向量，如果沒有設置默認的16個0
+
+                ICryptoTransform decryptor = aesAlg.CreateDecryptor(); //建立對稱 AES解密子物件
+
+                using (MemoryStream msDecrypt = new(cipherByte)) // 存放區為記憶體的資料流
+                {
+                    using (CryptoStream csDecrypt = new(msDecrypt, decryptor, CryptoStreamMode.Read)) // 實作以特定的編碼方式將字元寫入位元組資料流的 TextWriter
+                    {
+                        using (StreamReader srDecrypt = new(csDecrypt)) // 實作以特定的編碼方式將字元寫入位元組資料流的 TextWriter
+                        {
+                            Decrypt = srDecrypt.ReadToEnd(); // 從解密流中讀取解密的字節並將它們放在一個字符串中。
+                        }
+                    }
+                }
+            }
+            return Decrypt;
+        }
+        #endregion
+        #endregion
+
         #region CipherByteArrayToString [ 通過加密的 Byte數組返回加密後的密文 ]
         /// <summary>通過加密的 Byte數組返回加密後的密文</summary>
         /// <param name="cipherByte">加密位元</param>
@@ -124,47 +166,6 @@ namespace LastShopping.Services
         }
         #endregion
 
-        #region AESDecrypt [ AES對稱解密 ]
-        /// <summary>AES解密</summary>
-        /// <param name="cipherText">本文</param>
-        /// <param name="key">密鑰</param>
-        /// <param name="iv">初始向量</param>
-        /// <param name="padding">填充模式</param>
-        /// <param name="mode">加密模式</param>
-        /// <param name="ciphertextType">密文類型</param>
-        /// <returns>string 解密本文</returns>
-        public static string AESDecrypt(string cipherText, string key, string iv = "", PaddingMode padding = PaddingMode.PKCS7, CipherMode mode = CipherMode.CBC, CiphertextType ciphertextType = CiphertextType.Base64)
-        {
-            using (Aes aesAlg = Aes.Create()) // 建立 Aes對稱演算法的密碼編譯物件
-            {
-                byte[] cipherByte = CiphertextStringToByteArray(cipherText, ciphertextType);
-
-                aesAlg.KeySize = 256;//秘钥的大小，以位为单位,128,256等
-                aesAlg.BlockSize = 128;//支持的块大小
-                aesAlg.Padding = padding;//填充模式
-                aesAlg.Mode = mode;
-                // SHA256 32位元
-                // MD5 16位元
-                aesAlg.Key = SHA256.Create().ComputeHash(Encoding.UTF8.GetBytes(key)); // 對稱演算法的秘密金鑰
-                aesAlg.IV = MD5.Create().ComputeHash(Encoding.UTF8.GetBytes(iv)); // 對稱演算法的初始化向量，如果沒有設置默認的16個0
-
-                ICryptoTransform decryptor = aesAlg.CreateDecryptor(); //建立對稱 AES解密子物件
-
-                using (MemoryStream msDecrypt = new(cipherByte)) // 存放區為記憶體的資料流
-                {
-                    using (CryptoStream csDecrypt = new(msDecrypt, decryptor, CryptoStreamMode.Read)) // 實作以特定的編碼方式將字元寫入位元組資料流的 TextWriter
-                    {
-                        using (StreamReader srDecrypt = new(csDecrypt)) // 實作以特定的編碼方式將字元寫入位元組資料流的 TextWriter
-                        {
-                            Decrypt = srDecrypt.ReadToEnd(); // 從解密流中讀取解密的字節並將它們放在一個字符串中。
-                        }
-                    }
-                }
-            }
-            return Decrypt;
-        }
-        #endregion
-
         #region CiphertextStringToByteArray [ 通過密文返回加密 Byte數組 ]
         /// <summary>通過密文返回加密 Byte數組</summary>
         /// <param name="ciphertext">加密字串</param>
@@ -204,7 +205,6 @@ namespace LastShopping.Services
             }
             return buffer;
         }
-        #endregion
         #endregion
     }
 }
