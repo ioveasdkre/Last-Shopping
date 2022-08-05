@@ -12,11 +12,11 @@ namespace LastShopping.Database.LastShoppingModels
         /// <summary>銷售訂單Id</summary>
         [Display(Name = "訂單Id")]
         public int OrderId { get; set; }
-        public SalesOrder Order { get; set; }
+        public SalesOrder Order { get; set; } = null!;
         /// <summary>產品Id</summary>
         [Display(Name = "產品Id")]
         public int ProductInformationId { get; set; }
-        public ProductInformation ProductInformation { get; set; }
+        public ProductInformation ProductInformation { get; set; } = null!;
 
         /// <summary>銷售數量</summary>
         [Display(Name = "銷售數量")]

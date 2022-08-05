@@ -10,7 +10,7 @@ namespace LastShopping.Database.UserAppModels
         /// <summary>使用者Token紀錄</summary>
         [Display(Name = "Token紀錄")]
         [Key]
-        public string RefreshToken { get; set; }
+        public string RefreshToken { get; set; } = null!;
         /// <summary>建立時間</summary>
         [Display(Name = "建立時間")]
         [Required]
@@ -24,6 +24,6 @@ namespace LastShopping.Database.UserAppModels
         [Display(Name = "使用者Id")]
         [Required]
         public int UserId { get; set; }
-        public UserMain UserMain { get; set; }
+        public UserMain UserMain { get; set; } = null!;
     }
 }

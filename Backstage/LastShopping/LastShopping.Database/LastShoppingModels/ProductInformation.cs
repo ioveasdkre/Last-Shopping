@@ -18,7 +18,7 @@ namespace LastShopping.Database.LastShoppingModels
         /// <summary>產品名稱</summary>
         [Display(Name = "產品名稱")]
         [Required]
-        public string ProductName { get; set; }
+        public string ProductName { get; set; } = string.Empty;
         /// <summary>建議售價</summary>
         [Display(Name = "建議售價")]
         [Required]
@@ -41,22 +41,22 @@ namespace LastShopping.Database.LastShoppingModels
         /// <summary>主要圖片路徑</summary>
         [Display(Name = "主要圖片路徑")]
         [Required]
-        public string ProductImgPath { get; set; }
+        public string ProductImgPath { get; set; } = string.Empty;
 
         /// <summary>廠商Id</summary>
         [Display(Name = "廠商Id")]
         [Required]
         public int FactoryId { get; set; }
         [ForeignKey("FactoryId")]
-        public virtual Factory Factory { get; set; }
+        public Factory Factory { get; set; } = null!;
 
         /// <summary>產品類型Id</summary>
         [Display(Name = "產品類型Id")]
         public int ProductTypeId { get; set; }
         [ForeignKey("ProductTypeId")]
-        public virtual ProductType ProductType { get; set; }
+        public ProductType ProductType { get; set; } = null!;
 
-        public ICollection<ProductImg> ProductImgs { get; set; }
-        public ICollection<PurchaseOrderDetails> PurchaseOrderDetails { get; set; }
+        public ICollection<ProductImg> ProductImgs { get; set; } = null!;
+        public ICollection<PurchaseOrderDetails> PurchaseOrderDetails { get; set; } = null!;
     }
 }

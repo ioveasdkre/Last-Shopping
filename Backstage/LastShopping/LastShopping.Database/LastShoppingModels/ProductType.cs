@@ -16,7 +16,7 @@ namespace LastShopping.Database.LastShoppingModels
         /// <summary>產品類型名稱</summary>
         [Display(Name = "產品類型名稱")]
         [Required]
-        public string Type { get; set; }
+        public string Type { get; set; } = string.Empty;
         /// <summary>建立時間</summary>
         [Display(Name = "建立時間")]
         [Required]
@@ -25,6 +25,6 @@ namespace LastShopping.Database.LastShoppingModels
         [Display(Name = "修改時間")]
         public DateTime? ModifyDate { get; set; }
 
-        public ICollection<ProductInformation> ProductInformations { get; set; }
+        public ICollection<ProductInformation> ProductInformations { get; set; } = null!;
     }
 }

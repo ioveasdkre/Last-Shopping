@@ -10,7 +10,7 @@ namespace LastShopping.Database.UserAppModels
         /// <summary>管理者Token紀錄</summary>
         [Display(Name = "Token紀錄")]
         [Key]
-        public string RefreshToken { get; set; }
+        public string RefreshToken { get; set; } = string.Empty;
         /// <summary>建立時間</summary>
         [Display(Name = "建立時間")]
         [Required]
@@ -24,6 +24,6 @@ namespace LastShopping.Database.UserAppModels
         [Display(Name = "管理者Id")]
         [Required]
         public int ManagerId { get; set; }
-        public ManagerMain ManagerMain { get; set; }
+        public ManagerMain ManagerMain { get; set; } = null!;
     }
 }

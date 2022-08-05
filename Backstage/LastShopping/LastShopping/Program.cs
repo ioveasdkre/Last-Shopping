@@ -50,7 +50,7 @@ app.Use(async (context, next) =>
     // 設定CSP
     context.Response.Headers.Add(
         "Content-Security-Policy",
-        "base-uri 'none'; child-src 'none'; connect-src 'self' wss:; default-src 'self' 'unsafe-inline'; font-src 'none'; form-action 'self'; frame-ancestors 'none'; frame-src 'none'; img-src 'self' data:; manifest-src 'none'; media-src 'none'; object-src 'none'; sandbox allow-downloads allow-forms allow-modals allow-same-origin allow-scripts; script-src 'self' 'unsafe-inline'; script-src-attr 'self' 'unsafe-inline'; script-src-elem 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; style-src-attr 'unsafe-inline'; style-src-elem 'self' 'unsafe-inline'; trusted-types 'none'; upgrade-insecure-requests; worker-src 'none';"
+        "base-uri 'none'; child-src 'none'; connect-src 'self' wss:; default-src 'none'; font-src 'self'; form-action 'self'; frame-ancestors 'none'; frame-src 'none'; img-src 'self' data:; manifest-src 'none'; media-src 'none'; object-src 'none'; sandbox allow-downloads allow-forms allow-modals allow-same-origin allow-scripts; script-src 'none'; script-src-attr 'self' 'nonce-cm1vaw=='; script-src-elem 'self' 'nonce-cm1vaw=='; style-src 'self'; style-src-attr 'none'; style-src-elem 'self'; require-trusted-types-for 'script'; upgrade-insecure-requests; worker-src 'none';"
     );
     await next();
 });

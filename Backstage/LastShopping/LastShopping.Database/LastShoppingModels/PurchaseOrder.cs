@@ -21,6 +21,6 @@ namespace LastShopping.Database.LastShoppingModels
         [Display(Name = "修改時間")]
         public DateTime? ModifyDate { get; set; }
 
-        public ICollection<PurchaseOrderDetails> PurchaseOrderDetails { get; set; }
+        public ICollection<PurchaseOrderDetails> PurchaseOrderDetails { get; set; } = null!;
     }
 }

@@ -26,6 +26,6 @@ namespace LastShopping.Database.UserAppModels
         [Display(Name = "管理者Id")]
         [Required]
         public int ManagerId { get; set; }
-        public ManagerMain ManagerMain { get; set; }
+        public ManagerMain ManagerMain { get; set; } = null!;
     }
 }

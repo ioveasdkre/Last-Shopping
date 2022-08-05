@@ -9,15 +9,15 @@ namespace LastShopping.Database.DbContextModel
         {
         }
 
-        public DbSet<UserMain> UserMain { get; set; }
-        public DbSet<UserLoginLog> UserLoginLogs { get; set; }
-        public DbSet<UserRefreshTokenLog> UserRefreshTokenLogs { get; set; }
-        public DbSet<ManagerMain> ManagerMain { get; set; }
-        public DbSet<ManagerLoginLog> ManagerLoginLogs { get; set; }
-        public DbSet<ManagerRefreshTokenLog> ManagerRefreshTokenLogs { get; set; }
-        public DbSet<ManagerRole> ManagerRole { get; set; }
-        public DbSet<ManagerRoleAuth> ManagerRoleAuths { get; set; }
-        public DbSet<ManagerRouter> ManagerRouter { get; set; }
+        public DbSet<UserMain> UserMain => Set<UserMain>();
+        public DbSet<UserLoginLog> UserLoginLogs => Set<UserLoginLog>();
+        public DbSet<UserRefreshTokenLog> UserRefreshTokenLogs => Set<UserRefreshTokenLog>();
+        public DbSet<ManagerMain> ManagerMain => Set<ManagerMain>();
+        public DbSet<ManagerLoginLog> ManagerLoginLogs => Set<ManagerLoginLog>();
+        public DbSet<ManagerRefreshTokenLog> ManagerRefreshTokenLogs => Set<ManagerRefreshTokenLog>();
+        public DbSet<ManagerRole> ManagerRole => Set<ManagerRole>();
+        public DbSet<ManagerRoleAuth> ManagerRoleAuths => Set<ManagerRoleAuth>();
+        public DbSet<ManagerRouter> ManagerRouter => Set<ManagerRouter>();
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

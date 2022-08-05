@@ -14,16 +14,16 @@ namespace LastShopping.Database.UserAppModels
         /// <summary>路由名稱</summary>
         [Display(Name = "路由名稱")]
         [Required]
-        [StringLength(250)]
-        public string RouterName { get; set; }
+        [StringLength(256)]
+        public string RouterName { get; set; } = string.Empty;
         /// <summary>網頁連結</summary>
         [Display(Name = "網頁連結")]
         [Required]
-        [StringLength(250)]
-        public string Link { get; set; }
+        [StringLength(256)]
+        public string Link { get; set; } = string.Empty;
         /// <summary>圖標</summary>
         [Display(Name = "圖標")]
-        [StringLength(250)]
+        [StringLength(256)]
         public string? Icon { get; set; }
         /// <summary>路由身分</summary>
         [Display(Name = "路由身分")]
@@ -34,6 +34,6 @@ namespace LastShopping.Database.UserAppModels
         [Required]
         public bool Flag { get; set; }
 
-        public ICollection<ManagerRoleAuth> ManagerRoleAuths { get; set; }
+        public ICollection<ManagerRoleAuth> ManagerRoleAuths { get; set; } = null!;
     }
 }

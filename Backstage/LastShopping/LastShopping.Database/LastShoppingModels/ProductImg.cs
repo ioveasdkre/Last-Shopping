@@ -15,7 +15,7 @@ namespace LastShopping.Database.LastShoppingModels
         public int ProductImgId { get; set; }
         /// <summary>產品圖片路徑</summary>
         [Display(Name = "產品圖片路徑")]
-        public string ProductImgPath { get; set; }
+        public string ProductImgPath { get; set; } = string.Empty;
         /// <summary>建立時間</summary>
         [Display(Name = "建立時間")]
         [Required]
@@ -28,7 +28,7 @@ namespace LastShopping.Database.LastShoppingModels
         [Display(Name = "產品Id")]
         [Required]
         public int ProductInformationId { get; set; }
-        public ProductInformation ProductInformation { get; set; }
+        public ProductInformation ProductInformation { get; set; } = null!;
 
     }
 }

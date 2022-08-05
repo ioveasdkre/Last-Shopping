@@ -18,22 +18,22 @@ namespace LastShopping.Database.UserAppModels
         [Display(Name = "姓名")]
         [Required]
         [MaxLength(20)]
-        public string UserName { get; set; }
+        public string UserName { get; set; } = string.Empty;
         /// <summary>管理者帳號</summary>
         [Display(Name = "帳號")]
         [Required]
         [MaxLength(20)]
-        public string Account { get; set; }
+        public string Account { get; set; } = string.Empty;
         /// <summary>管理者密碼</summary>
         [Display(Name = "密碼")]
         [Required]
         [MaxLength(250)]
-        public string Password { get; set; }
+        public string Password { get; set; } = string.Empty;
         /// <summary>管理者電子信箱</summary>
         [Display(Name = "電子信箱")]
         [Required]
         [MaxLength(250)]
-        public string Email { get; set; }
+        public string Email { get; set; } = string.Empty;
         /// <summary>管理者地址</summary>
         [Display(Name = "地址")]
         [Required]
@@ -60,8 +60,8 @@ namespace LastShopping.Database.UserAppModels
         [Display(Name = "管理者身分Id")]
         [Required]
         public int ManagerRoleId { get; set; }
-        public ManagerRole ManagerRole { get; set; }
-        public ICollection<ManagerLoginLog> ManagerLoginLogs { get; set; }
-        public ICollection<ManagerRefreshTokenLog> ManagerRefreshTokenLogs { get; set; }
+        public ManagerRole ManagerRole { get; set; } = null!;
+        public ICollection<ManagerLoginLog> ManagerLoginLogs { get; set; } = null!;
+        public ICollection<ManagerRefreshTokenLog> ManagerRefreshTokenLogs { get; set; } = null!;
     }
 }

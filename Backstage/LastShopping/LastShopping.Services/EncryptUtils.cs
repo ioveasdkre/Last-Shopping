@@ -9,9 +9,9 @@ namespace LastShopping.Services
     {
         #region [ 初始化 ]
         /// <summary>加密</summary>
-        private static byte[] Encrypt { get; set; }
+        private static byte[] Encrypt { get; set; } = null!;
         /// <summary>解密</summary>
-        private static string Decrypt { get; set; }
+        private static string Decrypt { get; set; } = string.Empty;
         public static readonly string AesKey = AppSettingsUtils.GetAppSettingsValue("AES", "Key");
         public static readonly string AesIv = AppSettingsUtils.GetAppSettingsValue("AES", "Iv");
         #endregion
@@ -25,6 +25,7 @@ namespace LastShopping.Services
             byte[] bytes = Encoding.UTF8.GetBytes(text); // 轉換 UTF8編碼
             byte[] hash = SHA256.Create().ComputeHash(bytes); // SHA256 雜湊加密
 
+            // 判斷使用 AES加密
             if (aesEncrypt)
             {
                 return AESEncrypt(CipherByteArrayToString(hash, ciphertextType), AesKey, AesIv);
@@ -58,7 +59,23 @@ namespace LastShopping.Services
                 // SHA256 32位元
                 // MD5 16位元
                 aesAlg.Key = SHA256.Create().ComputeHash(Encoding.UTF8.GetBytes(key)); // 對稱演算法的秘密金鑰
-                aesAlg.IV = MD5.Create().ComputeHash(Encoding.UTF8.GetBytes(iv)); // 對稱演算法的初始化向量，如果沒有設置默認的16個0
+
+                byte[] ivBytes = Encoding.UTF8.GetBytes(iv);
+                byte[] useIvBytes = new byte[16]; // 儲存 16byte的籃子 若超過加密會失敗
+
+                // 判斷 加密長度大於 設定的長度
+                if (ivBytes.Length > useIvBytes.Length)
+                {
+                    // Array.Copy(目標, 資料來源, 長度)
+                    Array.Copy(ivBytes, useIvBytes, useIvBytes.Length);
+                }
+                else
+                {
+                    // Array.Copy(目標, 資料來源, 長度)
+                    Array.Copy(ivBytes, useIvBytes, ivBytes.Length);
+                }
+
+                aesAlg.IV = useIvBytes; // 對稱演算法的初始化向量，如果沒有設置默認的16個0
 
                 ICryptoTransform encryptor = aesAlg.CreateEncryptor(); // 建立對稱 AES加密子物件
 
@@ -102,7 +119,23 @@ namespace LastShopping.Services
                 // SHA256 32位元
                 // MD5 16位元
                 aesAlg.Key = SHA256.Create().ComputeHash(Encoding.UTF8.GetBytes(key)); // 對稱演算法的秘密金鑰
-                aesAlg.IV = MD5.Create().ComputeHash(Encoding.UTF8.GetBytes(iv)); // 對稱演算法的初始化向量，如果沒有設置默認的16個0
+
+                byte[] ivBytes = Encoding.UTF8.GetBytes(iv);
+                byte[] useIvBytes = new byte[16]; // 儲存 16byte的籃子 若超過加密會失敗
+
+                // 判斷 加密長度大於 設定的長度
+                if (ivBytes.Length > useIvBytes.Length)
+                {
+                    // Array.Copy(目標, 資料來源, 長度)
+                    Array.Copy(ivBytes, useIvBytes, useIvBytes.Length);
+                }
+                else
+                {
+                    // Array.Copy(目標, 資料來源, 長度)
+                    Array.Copy(ivBytes, useIvBytes, ivBytes.Length);
+                }
+
+                aesAlg.IV = useIvBytes; // 對稱演算法的初始化向量，如果沒有設置默認的16個0
 
                 ICryptoTransform decryptor = aesAlg.CreateDecryptor(); //建立對稱 AES解密子物件
 

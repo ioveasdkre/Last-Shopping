@@ -11,14 +11,14 @@ namespace LastShopping.Database.DbContextModel
         {
         }
 
-        public DbSet<ProductType> ProductType { get; set; }
-        public DbSet<ProductImg> ProductImgs { get; set; }
-        public DbSet<ProductInformation> ProductInformation { get; set; }
-        public DbSet<SalesOrderDetails> SalesOrderDetails { get; set; }
-        public DbSet<SalesOrder> SalesOrders { get; set; }
-        public DbSet<Factory> Factory { get; set; }
-        public DbSet<PurchaseOrder> PurchaseOrders { get; set; }
-        public DbSet<PurchaseOrderDetails> PurchaseOrderDetails { get; set; }
+        public DbSet<ProductType> ProductType => Set<ProductType>();
+        public DbSet<ProductImg> ProductImgs => Set<ProductImg>();
+        public DbSet<ProductInformation> ProductInformation => Set<ProductInformation>();
+        public DbSet<SalesOrderDetails> SalesOrderDetails => Set<SalesOrderDetails>();
+        public DbSet<SalesOrder> SalesOrders => Set<SalesOrder>();
+        public DbSet<Factory> Factory => Set<Factory>();
+        public DbSet<PurchaseOrder> PurchaseOrders => Set<PurchaseOrder>();
+        public DbSet<PurchaseOrderDetails> PurchaseOrderDetails => Set<PurchaseOrderDetails>();
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

@@ -26,6 +26,6 @@ namespace LastShopping.Database.UserAppModels
         [Display(Name = "使用者Id")]
         [Required]
         public int UserId { get; set; }
-        public UserMain UserMain { get; set; }
+        public UserMain UserMain { get; set; } = null!;
     }
 }

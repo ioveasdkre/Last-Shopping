@@ -12,11 +12,11 @@ namespace LastShopping.Database.LastShoppingModels
         /// <summary>進貨訂單Id</summary>
         [Display(Name = "訂單Id")]
         public int PurchaseOrderId { get; set; }
-        public PurchaseOrder PurchaseOrder { get; set; }
+        public PurchaseOrder PurchaseOrder { get; set; } = null!;
         /// <summary>產品Id</summary>
         [Display(Name = "產品Id")]
         public int ProductInformationId { get; set; }
-        public ProductInformation ProductInformation { get; set; }
+        public ProductInformation ProductInformation { get; set; } = null!;
         /// <summary>進貨數量</summary>
         [Display(Name = "進貨數量")]
         [Required]
@@ -37,6 +37,6 @@ namespace LastShopping.Database.LastShoppingModels
         [MaxLength(1)]
         [Required]
         [Column(TypeName = "nchar(1)")]
-        public string 是否結單 { get; set; }
+        public string 是否結單 { get; set; } = string.Empty;
     }
 }

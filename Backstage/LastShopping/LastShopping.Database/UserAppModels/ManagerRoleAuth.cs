@@ -14,48 +14,33 @@ namespace LastShopping.Database.UserAppModels
         [Display(Name = "管理平台身分Id")]
         [Required]
         public int ManagerRoleId { get; set; }
-        public ManagerRole ManagerRole { get; set; }
+        public ManagerRole ManagerRole { get; set; } = null!;
         /// <summary>路由ID</summary>
         [Display(Name = "路由ID")]
         [Required]
         public int RouterId { get; set; }
-        public ManagerRouter Router { get; set; }
+        public ManagerRouter Router { get; set; } = null!;
 
         /// <summary>瀏覽權限</summary>
         [Display(Name = "瀏覽權限")]
         [Required]
-        [StringLength(1)]
-        [RegularExpression(@"[YN]")]
-        [Column(TypeName = "nchar(1)")]
-        public string ViewAuth { get; set; }
+        public bool ViewAuth { get; set; }
         /// <summary>新增權限</summary>
         [Display(Name = "新增權限")]
         [Required]
-        [StringLength(1)]
-        [RegularExpression(@"[YN]")]
-        [Column(TypeName = "nchar(1)")]
-        public string CreateAuth { get; set; }
+        public bool CreateAuth { get; set; }
         /// <summary>修改權限</summary>
         [Display(Name = "修改權限")]
         [Required]
-        [StringLength(1)]
-        [RegularExpression(@"[YN]")]
-        [Column(TypeName = "nchar(1)")]
-        public string ModifyAuth { get; set; }
+        public bool ModifyAuth { get; set; }
         /// <summary>刪除權限</summary>
         [Display(Name = "刪除權限")]
         [Required]
-        [StringLength(1)]
-        [RegularExpression(@"[YN]")]
-        [Column(TypeName = "nchar(1)")]
-        public string DeleteAuth { get; set; }
+        public bool DeleteAuth { get; set; }
         /// <summary>檔案權限</summary>
         [Display(Name = "檔案權限")]
         [Required]
-        [StringLength(1)]
-        [RegularExpression(@"[YN]")]
-        [Column(TypeName = "nchar(1)")]
-        public string ExportAuth { get; set; }
+        public bool ExportAuth { get; set; }
         /// <summary>建立時間</summary>
         [Display(Name = "建立時間")]
         [Required]
