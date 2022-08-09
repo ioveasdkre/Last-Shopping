@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LastShopping.Database.Migrations.LastShoppingDb
 {
     [DbContext(typeof(LastShoppingDbContext))]
-    [Migration("20220718024824_20220718initial")]
-    partial class _20220718initial
+    [Migration("20220808060750_20220808UpdateIdandForeignKey")]
+    partial class _20220808UpdateIdandForeignKey
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -26,34 +26,34 @@ namespace LastShopping.Database.Migrations.LastShoppingDb
 
             modelBuilder.Entity("LastShopping.Database.LastShoppingModels.Factory", b =>
                 {
-                    b.Property<int>("FactoryId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("FactoryId"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<DateTime>("CreateDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("FactoryName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<DateTime?>("ModifyDate")
                         .HasColumnType("datetime2");
 
-                    b.HasKey("FactoryId");
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
 
                     b.ToTable("Factory");
                 });
 
             modelBuilder.Entity("LastShopping.Database.LastShoppingModels.ProductImg", b =>
                 {
-                    b.Property<int>("ProductImgId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ProductImgId"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<DateTime>("CreateDate")
                         .HasColumnType("datetime2");
@@ -61,14 +61,16 @@ namespace LastShopping.Database.Migrations.LastShoppingDb
                     b.Property<DateTime>("ModifyDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("ProductImgPath")
+                    b.Property<string>("Path")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("ProductInformationId")
                         .HasColumnType("int");
 
-                    b.HasKey("ProductImgId");
+                    b.HasKey("Id");
+
+                    b.HasIndex("Id");
 
                     b.HasIndex("ProductInformationId");
 
@@ -77,11 +79,11 @@ namespace LastShopping.Database.Migrations.LastShoppingDb
 
             modelBuilder.Entity("LastShopping.Database.LastShoppingModels.ProductInformation", b =>
                 {
-                    b.Property<int>("ProductInformationId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ProductInformationId"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<DateTime>("CreateDate")
                         .HasColumnType("datetime2");
@@ -95,11 +97,11 @@ namespace LastShopping.Database.Migrations.LastShoppingDb
                     b.Property<DateTime?>("ModifyDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("ProductImgPath")
+                    b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("ProductName")
+                    b.Property<string>("Path")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -112,11 +114,11 @@ namespace LastShopping.Database.Migrations.LastShoppingDb
                     b.Property<int>("SuggestedPrice")
                         .HasColumnType("int");
 
-                    b.HasKey("ProductInformationId");
+                    b.HasKey("Id");
 
                     b.HasIndex("FactoryId");
 
-                    b.HasIndex("ProductInformationId");
+                    b.HasIndex("Id");
 
                     b.HasIndex("ProductTypeId");
 
@@ -125,11 +127,11 @@ namespace LastShopping.Database.Migrations.LastShoppingDb
 
             modelBuilder.Entity("LastShopping.Database.LastShoppingModels.ProductType", b =>
                 {
-                    b.Property<int>("ProductTypeId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ProductTypeId"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<DateTime>("CreateDate")
                         .HasColumnType("datetime2");
@@ -141,20 +143,20 @@ namespace LastShopping.Database.Migrations.LastShoppingDb
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("ProductTypeId");
+                    b.HasKey("Id");
 
-                    b.HasIndex("ProductTypeId");
+                    b.HasIndex("Id");
 
                     b.ToTable("ProductType");
                 });
 
             modelBuilder.Entity("LastShopping.Database.LastShoppingModels.PurchaseOrder", b =>
                 {
-                    b.Property<int>("SalesOrderId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("SalesOrderId"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
@@ -162,9 +164,9 @@ namespace LastShopping.Database.Migrations.LastShoppingDb
                     b.Property<DateTime?>("ModifyDate")
                         .HasColumnType("datetime2");
 
-                    b.HasKey("SalesOrderId");
+                    b.HasKey("Id");
 
-                    b.HasIndex("SalesOrderId");
+                    b.HasIndex("Id");
 
                     b.ToTable("PurchaseOrders");
                 });
@@ -177,22 +179,20 @@ namespace LastShopping.Database.Migrations.LastShoppingDb
                     b.Property<int>("ProductInformationId")
                         .HasColumnType("int");
 
+                    b.Property<int>("Amount")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("CreateDate")
                         .HasColumnType("datetime2");
 
                     b.Property<DateTime?>("ModifyDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("ProductAmount")
+                    b.Property<int>("Price")
                         .HasColumnType("int");
 
-                    b.Property<int>("ProductPrice")
-                        .HasColumnType("int");
-
-                    b.Property<string>("是否結單")
-                        .IsRequired()
-                        .HasMaxLength(1)
-                        .HasColumnType("nchar(1)");
+                    b.Property<bool>("是否結單")
+                        .HasColumnType("bit");
 
                     b.HasKey("PurchaseOrderId", "ProductInformationId");
 
@@ -205,11 +205,11 @@ namespace LastShopping.Database.Migrations.LastShoppingDb
 
             modelBuilder.Entity("LastShopping.Database.LastShoppingModels.SalesOrder", b =>
                 {
-                    b.Property<int>("SalesOrderId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("SalesOrderId"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
@@ -220,7 +220,9 @@ namespace LastShopping.Database.Migrations.LastShoppingDb
                     b.Property<int>("UserId")
                         .HasColumnType("int");
 
-                    b.HasKey("SalesOrderId");
+                    b.HasKey("Id");
+
+                    b.HasIndex("Id");
 
                     b.HasIndex("UserId");
 
@@ -229,10 +231,13 @@ namespace LastShopping.Database.Migrations.LastShoppingDb
 
             modelBuilder.Entity("LastShopping.Database.LastShoppingModels.SalesOrderDetails", b =>
                 {
-                    b.Property<int>("OrderId")
+                    b.Property<int>("SalesOrderId")
                         .HasColumnType("int");
 
                     b.Property<int>("ProductInformationId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Amount")
                         .HasColumnType("int");
 
                     b.Property<DateTime?>("ArrivalDate")
@@ -248,17 +253,14 @@ namespace LastShopping.Database.Migrations.LastShoppingDb
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("ProductAmount")
+                    b.Property<int>("Price")
                         .HasColumnType("int");
 
-                    b.Property<int>("ProductPrice")
-                        .HasColumnType("int");
-
-                    b.HasKey("OrderId", "ProductInformationId");
-
-                    b.HasIndex("OrderId");
+                    b.HasKey("SalesOrderId", "ProductInformationId");
 
                     b.HasIndex("ProductInformationId");
+
+                    b.HasIndex("SalesOrderId");
 
                     b.ToTable("SalesOrderDetails");
                 });
@@ -314,21 +316,21 @@ namespace LastShopping.Database.Migrations.LastShoppingDb
 
             modelBuilder.Entity("LastShopping.Database.LastShoppingModels.SalesOrderDetails", b =>
                 {
-                    b.HasOne("LastShopping.Database.LastShoppingModels.SalesOrder", "Order")
-                        .WithMany()
-                        .HasForeignKey("OrderId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("LastShopping.Database.LastShoppingModels.ProductInformation", "ProductInformation")
                         .WithMany()
                         .HasForeignKey("ProductInformationId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Order");
+                    b.HasOne("LastShopping.Database.LastShoppingModels.SalesOrder", "SalesOrder")
+                        .WithMany()
+                        .HasForeignKey("SalesOrderId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("ProductInformation");
+
+                    b.Navigation("SalesOrder");
                 });
 
             modelBuilder.Entity("LastShopping.Database.LastShoppingModels.Factory", b =>

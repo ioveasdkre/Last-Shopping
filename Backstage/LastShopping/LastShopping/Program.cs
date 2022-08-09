@@ -1,4 +1,5 @@
 using LastShopping.Database.DbContextModel;
+using LastShopping.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,6 +10,16 @@ builder.Services.AddDbContextPool<LastShoppingDbContext>(
 builder.Services.AddDbContextPool<UserAppDbContext>(
     o => o.UseSqlServer(builder.Configuration.GetConnectionString("UserAppDb")));
 
+// 將 Helper結尾且生命週期相同的物件,統一註冊
+builder.Services.Scan(scan => scan
+        .FromAssemblyOf<Program>() // 1.遍歷Startup類別所在程序集中的所有類別
+        .AddClasses(classes => // 2.要自動註冊的類別,條件為 Helper結尾的類別
+            classes.Where(t => t.Name.EndsWith("Helper", StringComparison.OrdinalIgnoreCase)))
+        .AsImplementedInterfaces() // 3.註冊的類別有實作界面
+        .WithScopedLifetime() // 4.生命週期設定為Scoped
+);
+// DI注入
+builder.Services.AddScoped<AppSettingsUtils>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
@@ -23,7 +34,9 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+// 會自動轉成https請求，沒關閉的話http的請求都會被擋住
 app.UseHttpsRedirection();
+// 讀取伺服器靜態檔案設定
 app.UseStaticFiles();
 
 // 此方法內設定值為資安設定            
@@ -57,6 +70,7 @@ app.Use(async (context, next) =>
 
 app.UseRouting();
 
+// 套用驗證在路由
 app.UseAuthorization();
 
 app.MapControllerRoute(

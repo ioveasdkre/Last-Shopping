@@ -22,11 +22,11 @@ namespace LastShopping.Database.DbContextModel
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<UserRefreshTokenLog>()
-                .HasKey(a => new { a.RefreshToken, a.UserId });
+                .HasKey(a => new { a.RefreshToken, a.UserMainId });
             modelBuilder.Entity<ManagerRefreshTokenLog>()
-                .HasKey(a => new { a.RefreshToken, a.ManagerId });
+                .HasKey(a => new { a.RefreshToken, a.ManagerMainId });
             modelBuilder.Entity<ManagerRoleAuth>()
-                .HasKey(a => new { a.RouterId, a.ManagerRoleId });
+                .HasKey(a => new { a.ManagerRoleId, a.ManagerRouterId });
         }
     }
 }

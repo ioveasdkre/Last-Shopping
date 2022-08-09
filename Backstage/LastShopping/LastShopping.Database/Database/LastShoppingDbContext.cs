@@ -23,7 +23,7 @@ namespace LastShopping.Database.DbContextModel
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<SalesOrderDetails>()
-                .HasKey(a => new { a.OrderId, a.ProductInformationId });
+                .HasKey(a => new { a.SalesOrderId, a.ProductInformationId });
             modelBuilder.Entity<PurchaseOrderDetails>()
                 .HasKey(a => new { a.PurchaseOrderId, a.ProductInformationId });
 

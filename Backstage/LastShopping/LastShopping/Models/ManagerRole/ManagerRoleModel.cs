@@ -6,6 +6,6 @@ namespace LastShopping.Models.ManagerRole
     {
         /// <summary>管理者身分名稱</summary>
         [Display(Name = "身分名稱")]
-        public string ManagerRoleName { get; set; } = string.Empty;
+        public string Name { get; set; } = string.Empty;
     }
 }

@@ -23,4 +23,9 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Migrations\LastShoppingDb\" />
+    <Folder Include="Migrations\UserAppDb\" />
+  </ItemGroup>
+
 </Project>

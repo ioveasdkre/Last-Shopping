@@ -4,6 +4,7 @@ using LastShopping.Database.DbContextModel;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LastShopping.Database.Migrations.LastShoppingDb
 {
     [DbContext(typeof(LastShoppingDbContext))]
-    partial class LastShoppingDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220808062057_20220808UpdateTableName")]
+    partial class _20220808UpdateTableName
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -31,17 +33,14 @@ namespace LastShopping.Database.Migrations.LastShoppingDb
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<DateTime>("CreateDate")
-                        .HasColumnType("datetime2")
-                        .HasComment("建立時間");
+                        .HasColumnType("datetime2");
 
                     b.Property<DateTime?>("ModifyDate")
-                        .HasColumnType("datetime2")
-                        .HasComment("修改時間");
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)")
-                        .HasComment("廠商名稱");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -52,27 +51,22 @@ namespace LastShopping.Database.Migrations.LastShoppingDb
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasComment("產品圖片Id");
+                        .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<DateTime>("CreateDate")
-                        .HasColumnType("datetime2")
-                        .HasComment("建立時間");
+                        .HasColumnType("datetime2");
 
                     b.Property<DateTime>("ModifyDate")
-                        .HasColumnType("datetime2")
-                        .HasComment("修改時間");
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Path")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)")
-                        .HasComment("產品圖片路徑");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("ProductInformationId")
-                        .HasColumnType("int")
-                        .HasComment("產品Id");
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
@@ -87,48 +81,38 @@ namespace LastShopping.Database.Migrations.LastShoppingDb
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasComment("產品Id");
+                        .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<DateTime>("CreateDate")
-                        .HasColumnType("datetime2")
-                        .HasComment("建立時間");
+                        .HasColumnType("datetime2");
 
                     b.Property<int>("FactoryId")
-                        .HasColumnType("int")
-                        .HasComment("廠商Id");
+                        .HasColumnType("int");
 
                     b.Property<int>("Inventory")
-                        .HasColumnType("int")
-                        .HasComment("庫存量");
+                        .HasColumnType("int");
 
                     b.Property<DateTime?>("ModifyDate")
-                        .HasColumnType("datetime2")
-                        .HasComment("修改時間");
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)")
-                        .HasComment("產品名稱");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Path")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)")
-                        .HasComment("主要圖片路徑");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("ProductTypeId")
-                        .HasColumnType("int")
-                        .HasComment("產品類型Id");
+                        .HasColumnType("int");
 
                     b.Property<int>("SellPrice")
-                        .HasColumnType("int")
-                        .HasComment("售價");
+                        .HasColumnType("int");
 
                     b.Property<int>("SuggestedPrice")
-                        .HasColumnType("int")
-                        .HasComment("建議售價");
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
@@ -145,23 +129,19 @@ namespace LastShopping.Database.Migrations.LastShoppingDb
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasComment("產品類型Id");
+                        .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<DateTime>("CreateDate")
-                        .HasColumnType("datetime2")
-                        .HasComment("建立時間");
+                        .HasColumnType("datetime2");
 
                     b.Property<DateTime?>("ModifyDate")
-                        .HasColumnType("datetime2")
-                        .HasComment("修改時間");
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Type")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)")
-                        .HasComment("產品類型");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -174,18 +154,15 @@ namespace LastShopping.Database.Migrations.LastShoppingDb
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasComment("進貨訂單資訊Id");
+                        .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("datetime2")
-                        .HasComment("建立時間");
+                        .HasColumnType("datetime2");
 
                     b.Property<DateTime?>("ModifyDate")
-                        .HasColumnType("datetime2")
-                        .HasComment("修改時間");
+                        .HasColumnType("datetime2");
 
                     b.HasKey("Id");
 
@@ -197,32 +174,25 @@ namespace LastShopping.Database.Migrations.LastShoppingDb
             modelBuilder.Entity("LastShopping.Database.LastShoppingModels.PurchaseOrderDetails", b =>
                 {
                     b.Property<int>("PurchaseOrderId")
-                        .HasColumnType("int")
-                        .HasComment("進貨訂單Id");
+                        .HasColumnType("int");
 
                     b.Property<int>("ProductInformationId")
-                        .HasColumnType("int")
-                        .HasComment("產品Id");
+                        .HasColumnType("int");
 
                     b.Property<int>("Amount")
-                        .HasColumnType("int")
-                        .HasComment("進貨數量");
+                        .HasColumnType("int");
 
                     b.Property<DateTime>("CreateDate")
-                        .HasColumnType("datetime2")
-                        .HasComment("建立時間");
+                        .HasColumnType("datetime2");
 
                     b.Property<DateTime?>("ModifyDate")
-                        .HasColumnType("datetime2")
-                        .HasComment("修改時間");
+                        .HasColumnType("datetime2");
 
                     b.Property<int>("Price")
-                        .HasColumnType("int")
-                        .HasComment("進貨成本");
+                        .HasColumnType("int");
 
                     b.Property<bool>("check")
-                        .HasColumnType("bit")
-                        .HasComment("是否結單");
+                        .HasColumnType("bit");
 
                     b.HasKey("PurchaseOrderId", "ProductInformationId");
 
@@ -237,22 +207,18 @@ namespace LastShopping.Database.Migrations.LastShoppingDb
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasComment("銷售訂單Id");
+                        .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("datetime2")
-                        .HasComment("建立時間");
+                        .HasColumnType("datetime2");
 
                     b.Property<DateTime?>("ModifyDate")
-                        .HasColumnType("datetime2")
-                        .HasComment("修改時間");
+                        .HasColumnType("datetime2");
 
                     b.Property<int>("UserId")
-                        .HasColumnType("int")
-                        .HasComment("使用者Id");
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
@@ -266,37 +232,29 @@ namespace LastShopping.Database.Migrations.LastShoppingDb
             modelBuilder.Entity("LastShopping.Database.LastShoppingModels.SalesOrderDetails", b =>
                 {
                     b.Property<int>("SalesOrderId")
-                        .HasColumnType("int")
-                        .HasComment("銷售訂單Id");
+                        .HasColumnType("int");
 
                     b.Property<int>("ProductInformationId")
-                        .HasColumnType("int")
-                        .HasComment("產品Id");
+                        .HasColumnType("int");
 
                     b.Property<int>("Amount")
-                        .HasColumnType("int")
-                        .HasComment("銷售數量");
+                        .HasColumnType("int");
 
                     b.Property<DateTime?>("ArrivalDate")
-                        .HasColumnType("datetime2")
-                        .HasComment("到貨時間");
+                        .HasColumnType("datetime2");
 
                     b.Property<DateTime>("CreateDate")
-                        .HasColumnType("datetime2")
-                        .HasComment("建立時間");
+                        .HasColumnType("datetime2");
 
                     b.Property<DateTime?>("ModifyDate")
-                        .HasColumnType("datetime2")
-                        .HasComment("修改時間");
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("OrderStatus")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)")
-                        .HasComment("訂單狀態");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Price")
-                        .HasColumnType("int")
-                        .HasComment("銷售價格");
+                        .HasColumnType("int");
 
                     b.HasKey("SalesOrderId", "ProductInformationId");
 

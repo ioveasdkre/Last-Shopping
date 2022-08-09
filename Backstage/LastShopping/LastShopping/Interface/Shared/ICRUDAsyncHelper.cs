@@ -14,6 +14,14 @@
     {
         /// <summary>取得所有資料</summary>
         /// <returns>所有資料</returns>
+        Task<T> GetAllAsync();
+        /// <summary>取得所有資料</summary>
+        /// <param name="limit">讀取數量 Take</param>
+        /// <param name="offset">過濾數量 Skip</param>
+        /// <param name="orderBy">排序欄位 orderBy</param>
+        /// <param name="orderDescription">排序方式 desc or asc</param>
+        /// <param name="filterStr">篩選關鍵字 Contains</param>
+        /// <returns>所有資料</returns>
         Task<T> GetAllAsync(int? limit, int? offset, string? orderBy, string? orderDescription, string? filterStr);
     }
 

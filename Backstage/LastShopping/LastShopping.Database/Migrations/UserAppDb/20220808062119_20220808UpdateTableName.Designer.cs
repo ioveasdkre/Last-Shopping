@@ -4,6 +4,7 @@ using LastShopping.Database.DbContextModel;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LastShopping.Database.Migrations.UserAppDb
 {
     [DbContext(typeof(UserAppDbContext))]
-    partial class UserAppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220808062119_20220808UpdateTableName")]
+    partial class _20220808UpdateTableName
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -26,22 +28,18 @@ namespace LastShopping.Database.Migrations.UserAppDb
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasComment("管理者登入紀錄表Id");
+                        .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<bool>("Flag")
-                        .HasColumnType("bit")
-                        .HasComment("管理者登入成功失敗");
+                        .HasColumnType("bit");
 
                     b.Property<DateTime>("LoginTime")
-                        .HasColumnType("datetime2")
-                        .HasComment("管理者登入時間");
+                        .HasColumnType("datetime2");
 
                     b.Property<int>("ManagerMainId")
-                        .HasColumnType("int")
-                        .HasComment("管理者Id");
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
@@ -56,60 +54,49 @@ namespace LastShopping.Database.Migrations.UserAppDb
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasComment("管理者ID");
+                        .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("Account")
                         .IsRequired()
                         .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)")
-                        .HasComment("帳號");
+                        .HasColumnType("nvarchar(20)");
 
                     b.Property<string>("Address")
                         .IsRequired()
                         .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)")
-                        .HasComment("地址");
+                        .HasColumnType("nvarchar(250)");
 
                     b.Property<DateTime>("Birthday")
-                        .HasColumnType("Date")
-                        .HasComment("管理者登入紀錄表Id");
+                        .HasColumnType("Date");
 
                     b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("datetime2")
-                        .HasComment("建立時間");
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Email")
                         .IsRequired()
                         .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)")
-                        .HasComment("電子信箱");
+                        .HasColumnType("nvarchar(250)");
 
                     b.Property<bool>("Flag")
-                        .HasColumnType("bit")
-                        .HasComment("帳號是否開啟");
+                        .HasColumnType("bit");
 
                     b.Property<int>("ManagerRoleId")
-                        .HasColumnType("int")
-                        .HasComment("管理者身分Id");
+                        .HasColumnType("int");
 
                     b.Property<DateTime?>("ModifyDate")
-                        .HasColumnType("datetime2")
-                        .HasComment("修改時間");
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Password")
                         .IsRequired()
                         .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)")
-                        .HasComment("密碼");
+                        .HasColumnType("nvarchar(250)");
 
                     b.Property<string>("UserName")
                         .IsRequired()
                         .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)")
-                        .HasComment("姓名");
+                        .HasColumnType("nvarchar(20)");
 
                     b.HasKey("Id");
 
@@ -123,20 +110,16 @@ namespace LastShopping.Database.Migrations.UserAppDb
             modelBuilder.Entity("LastShopping.Database.UserAppModels.ManagerRefreshTokenLog", b =>
                 {
                     b.Property<string>("RefreshToken")
-                        .HasColumnType("nvarchar(450)")
-                        .HasComment("Token紀錄");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<int>("ManagerMainId")
-                        .HasColumnType("int")
-                        .HasComment("管理者Id");
+                        .HasColumnType("int");
 
                     b.Property<DateTime>("CreateDate")
-                        .HasColumnType("datetime2")
-                        .HasComment("建立時間");
+                        .HasColumnType("datetime2");
 
                     b.Property<DateTime>("ExpirationDate")
-                        .HasColumnType("datetime2")
-                        .HasComment("Token有效時間");
+                        .HasColumnType("datetime2");
 
                     b.HasKey("RefreshToken", "ManagerMainId");
 
@@ -149,24 +132,20 @@ namespace LastShopping.Database.Migrations.UserAppDb
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasComment("管理平台身分Id");
+                        .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<DateTime>("CreateDate")
-                        .HasColumnType("datetime2")
-                        .HasComment("建立時間");
+                        .HasColumnType("datetime2");
 
                     b.Property<DateTime?>("ModifyDate")
-                        .HasColumnType("datetime2")
-                        .HasComment("修改時間");
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)")
-                        .HasComment("身分名稱");
+                        .HasColumnType("nvarchar(20)");
 
                     b.HasKey("Id");
 
@@ -178,40 +157,31 @@ namespace LastShopping.Database.Migrations.UserAppDb
             modelBuilder.Entity("LastShopping.Database.UserAppModels.ManagerRoleAuth", b =>
                 {
                     b.Property<int>("ManagerRoleId")
-                        .HasColumnType("int")
-                        .HasComment("管理平台身分Id");
+                        .HasColumnType("int");
 
                     b.Property<int>("ManagerRouterId")
-                        .HasColumnType("int")
-                        .HasComment("路由ID");
+                        .HasColumnType("int");
 
                     b.Property<bool>("CreateAuth")
-                        .HasColumnType("bit")
-                        .HasComment("新增權限");
+                        .HasColumnType("bit");
 
                     b.Property<DateTime>("CreateDate")
-                        .HasColumnType("datetime2")
-                        .HasComment("建立時間");
+                        .HasColumnType("datetime2");
 
                     b.Property<bool>("DeleteAuth")
-                        .HasColumnType("bit")
-                        .HasComment("刪除權限");
+                        .HasColumnType("bit");
 
                     b.Property<bool>("ExportAuth")
-                        .HasColumnType("bit")
-                        .HasComment("檔案權限");
+                        .HasColumnType("bit");
 
                     b.Property<bool>("ModifyAuth")
-                        .HasColumnType("bit")
-                        .HasComment("修改權限");
+                        .HasColumnType("bit");
 
                     b.Property<DateTime?>("ModifyDate")
-                        .HasColumnType("datetime2")
-                        .HasComment("修改時間");
+                        .HasColumnType("datetime2");
 
                     b.Property<bool>("ViewAuth")
-                        .HasColumnType("bit")
-                        .HasComment("瀏覽權限");
+                        .HasColumnType("bit");
 
                     b.HasKey("ManagerRoleId", "ManagerRouterId");
 
@@ -226,35 +196,29 @@ namespace LastShopping.Database.Migrations.UserAppDb
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasComment("路由Id");
+                        .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<bool>("Flag")
-                        .HasColumnType("bit")
-                        .HasComment("路由使用權限");
+                        .HasColumnType("bit");
 
                     b.Property<int>("GroupId")
-                        .HasColumnType("int")
-                        .HasComment("路由身分");
+                        .HasColumnType("int");
 
                     b.Property<string>("Icon")
                         .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)")
-                        .HasComment("圖標");
+                        .HasColumnType("nvarchar(256)");
 
                     b.Property<string>("Link")
                         .IsRequired()
                         .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)")
-                        .HasComment("網頁連結");
+                        .HasColumnType("nvarchar(256)");
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)")
-                        .HasComment("路由名稱");
+                        .HasColumnType("nvarchar(256)");
 
                     b.HasKey("Id");
 
@@ -267,22 +231,18 @@ namespace LastShopping.Database.Migrations.UserAppDb
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasComment("使用者登入紀錄Id");
+                        .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<bool>("Flag")
-                        .HasColumnType("bit")
-                        .HasComment("登入成功失敗");
+                        .HasColumnType("bit");
 
                     b.Property<DateTime>("LoginTime")
-                        .HasColumnType("datetime2")
-                        .HasComment("登入時間");
+                        .HasColumnType("datetime2");
 
                     b.Property<int>("UserMainId")
-                        .HasColumnType("int")
-                        .HasComment("使用者Id");
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
@@ -297,63 +257,51 @@ namespace LastShopping.Database.Migrations.UserAppDb
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasComment("使用者Id");
+                        .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("Account")
                         .IsRequired()
                         .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)")
-                        .HasComment("帳號");
+                        .HasColumnType("nvarchar(20)");
 
                     b.Property<string>("Address")
                         .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)")
-                        .HasComment("地址");
+                        .HasColumnType("nvarchar(250)");
 
                     b.Property<DateTime>("Birthday")
-                        .HasColumnType("Date")
-                        .HasComment("出生年月日");
+                        .HasColumnType("Date");
 
                     b.Property<bool>("Cable")
-                        .HasColumnType("bit")
-                        .HasComment("電報功能");
+                        .HasColumnType("bit");
 
                     b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("datetime2")
-                        .HasComment("建立時間");
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Email")
                         .IsRequired()
                         .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)")
-                        .HasComment("電子信箱");
+                        .HasColumnType("nvarchar(250)");
 
                     b.Property<bool>("Flag")
-                        .HasColumnType("bit")
-                        .HasComment("帳號是否開啟");
+                        .HasColumnType("bit");
 
                     b.Property<DateTime?>("ModifyDate")
-                        .HasColumnType("datetime2")
-                        .HasComment("修改時間");
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)")
-                        .HasComment("姓名");
+                        .HasColumnType("nvarchar(20)");
 
                     b.Property<string>("Password")
                         .IsRequired()
                         .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)")
-                        .HasComment("密碼");
+                        .HasColumnType("nvarchar(250)");
 
                     b.Property<bool>("Privacy")
-                        .HasColumnType("bit")
-                        .HasComment("隱私權");
+                        .HasColumnType("bit");
 
                     b.HasKey("Id");
 
@@ -365,20 +313,16 @@ namespace LastShopping.Database.Migrations.UserAppDb
             modelBuilder.Entity("LastShopping.Database.UserAppModels.UserRefreshTokenLog", b =>
                 {
                     b.Property<string>("RefreshToken")
-                        .HasColumnType("nvarchar(450)")
-                        .HasComment("使用者Token紀錄");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<int>("UserMainId")
-                        .HasColumnType("int")
-                        .HasComment("使用者Id");
+                        .HasColumnType("int");
 
                     b.Property<DateTime>("CreateDate")
-                        .HasColumnType("datetime2")
-                        .HasComment("建立時間");
+                        .HasColumnType("datetime2");
 
                     b.Property<DateTime>("ExpirationDate")
-                        .HasColumnType("datetime2")
-                        .HasComment("Token有效時間");
+                        .HasColumnType("datetime2");
 
                     b.HasKey("RefreshToken", "UserMainId");
 

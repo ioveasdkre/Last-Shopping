@@ -2,12 +2,14 @@
 using LastShopping.Interface.Shared;
 using LastShopping.Models.ManagerRole;
 using LastShopping.VModels.ManagerRole;
+using Mapster;
+using Microsoft.EntityFrameworkCore;
 
-namespace LastShopping.Helper.ManagerRole
+namespace LastShopping.Helper
 {
-    public class ManagerRoleHelper : ICRUDAsyncHelper<ManagerRoleVModel, ManagerRoleVModel, ManagerRoleModel, ManagerRoleModel>
+    public class ManagerRoleHelper : ICRUDAsyncHelper<List<ManagerRoleVModel>, ManagerRoleVModel, ManagerRoleModel, ManagerRoleModel>
     {
-        public UserAppDbContext _userAppDb { get; }
+        private readonly UserAppDbContext _userAppDb;
 
 
         public ManagerRoleHelper(UserAppDbContext userAppDb)
@@ -15,10 +17,19 @@ namespace LastShopping.Helper.ManagerRole
             _userAppDb = userAppDb;
         }
 
-        public Task<ManagerRoleVModel> GetAllAsync(int? limit, int? offset, string? orderBy, string? orderDescription, string? filterStr)
+        public async Task<List<ManagerRoleVModel>> GetAllAsync()
+        {
+            string sqlStr = @"SELECT Id, Name,  convert(varchar, CreateDate, 23) as CreateDate, convert(varchar, ModifyDate, 23) as ModifyDate
+                                FROM ManagerRole";
+            var test = await _userAppDb.ManagerRole.FromSqlRaw(sqlStr).ToListAsync();
+            return test.Adapt<List<ManagerRoleVModel>>();
+        }
+
+        public Task<List<ManagerRoleVModel>> GetAllAsync(int? limit, int? offset, string? orderBy, string? orderDescription, string? filterStr)
         {
             throw new NotImplementedException();
         }
+
 
         public Task<ManagerRoleVModel> GetAsync(int id)
         {
@@ -29,7 +40,7 @@ namespace LastShopping.Helper.ManagerRole
         {
             Database.UserAppModels.ManagerRole managerRole = new()
             {
-                ManagerRoleName = request.ManagerRoleName,
+                Name = request.Name,
                 CreateDate = DateTime.Now
             };
 

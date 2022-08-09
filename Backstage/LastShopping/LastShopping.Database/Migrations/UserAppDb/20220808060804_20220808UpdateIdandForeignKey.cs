@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace LastShopping.Database.Migrations.UserAppDb
 {
-    public partial class _20220718initial : Migration
+    public partial class _20220808UpdateIdandForeignKey : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -13,7 +13,7 @@ namespace LastShopping.Database.Migrations.UserAppDb
                 name: "ManagerRole",
                 columns: table => new
                 {
-                    ManagerRoleId = table.Column<int>(type: "int", nullable: false)
+                    Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     ManagerRoleName = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false),
                     CreateDate = table.Column<DateTime>(type: "datetime2", nullable: false),
@@ -21,31 +21,31 @@ namespace LastShopping.Database.Migrations.UserAppDb
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_ManagerRole", x => x.ManagerRoleId);
+                    table.PrimaryKey("PK_ManagerRole", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
-                name: "Router",
+                name: "ManagerRouter",
                 columns: table => new
                 {
-                    RouterId = table.Column<int>(type: "int", nullable: false)
+                    Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    RouterName = table.Column<string>(type: "nvarchar(250)", maxLength: 250, nullable: false),
-                    Link = table.Column<string>(type: "nvarchar(250)", maxLength: 250, nullable: false),
-                    Icon = table.Column<string>(type: "nvarchar(250)", maxLength: 250, nullable: true),
+                    RouterName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: false),
+                    Link = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: false),
+                    Icon = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     GroupId = table.Column<int>(type: "int", nullable: false),
                     Flag = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Router", x => x.RouterId);
+                    table.PrimaryKey("PK_ManagerRouter", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
                 name: "UserMain",
                 columns: table => new
                 {
-                    UserId = table.Column<int>(type: "int", nullable: false)
+                    Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     UserName = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false),
                     Account = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false),
@@ -61,14 +61,14 @@ namespace LastShopping.Database.Migrations.UserAppDb
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_UserMain", x => x.UserId);
+                    table.PrimaryKey("PK_UserMain", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
                 name: "ManagerMain",
                 columns: table => new
                 {
-                    ManagerId = table.Column<int>(type: "int", nullable: false)
+                    Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     UserName = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false),
                     Account = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false),
@@ -83,12 +83,12 @@ namespace LastShopping.Database.Migrations.UserAppDb
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_ManagerMain", x => x.ManagerId);
+                    table.PrimaryKey("PK_ManagerMain", x => x.Id);
                     table.ForeignKey(
                         name: "FK_ManagerMain_ManagerRole_ManagerRoleId",
                         column: x => x.ManagerRoleId,
                         principalTable: "ManagerRole",
-                        principalColumn: "ManagerRoleId",
+                        principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
 
@@ -97,29 +97,29 @@ namespace LastShopping.Database.Migrations.UserAppDb
                 columns: table => new
                 {
                     ManagerRoleId = table.Column<int>(type: "int", nullable: false),
-                    RouterId = table.Column<int>(type: "int", nullable: false),
-                    ViewAuth = table.Column<string>(type: "nchar(1)", maxLength: 1, nullable: false),
-                    CreateAuth = table.Column<string>(type: "nchar(1)", maxLength: 1, nullable: false),
-                    ModifyAuth = table.Column<string>(type: "nchar(1)", maxLength: 1, nullable: false),
-                    DeleteAuth = table.Column<string>(type: "nchar(1)", maxLength: 1, nullable: false),
-                    ExportAuth = table.Column<string>(type: "nchar(1)", maxLength: 1, nullable: false),
+                    ManagerRouterId = table.Column<int>(type: "int", nullable: false),
+                    ViewAuth = table.Column<bool>(type: "bit", nullable: false),
+                    CreateAuth = table.Column<bool>(type: "bit", nullable: false),
+                    ModifyAuth = table.Column<bool>(type: "bit", nullable: false),
+                    DeleteAuth = table.Column<bool>(type: "bit", nullable: false),
+                    ExportAuth = table.Column<bool>(type: "bit", nullable: false),
                     CreateDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     ModifyDate = table.Column<DateTime>(type: "datetime2", nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_ManagerRoleAuths", x => new { x.RouterId, x.ManagerRoleId });
+                    table.PrimaryKey("PK_ManagerRoleAuths", x => new { x.ManagerRoleId, x.ManagerRouterId });
                     table.ForeignKey(
                         name: "FK_ManagerRoleAuths_ManagerRole_ManagerRoleId",
                         column: x => x.ManagerRoleId,
                         principalTable: "ManagerRole",
-                        principalColumn: "ManagerRoleId",
+                        principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_ManagerRoleAuths_Router_RouterId",
-                        column: x => x.RouterId,
-                        principalTable: "Router",
-                        principalColumn: "RouterId",
+                        name: "FK_ManagerRoleAuths_ManagerRouter_ManagerRouterId",
+                        column: x => x.ManagerRouterId,
+                        principalTable: "ManagerRouter",
+                        principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
 
@@ -127,21 +127,20 @@ namespace LastShopping.Database.Migrations.UserAppDb
                 name: "UserLoginLogs",
                 columns: table => new
                 {
-                    LoginLogId = table.Column<int>(type: "int", nullable: false)
+                    Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     LoginTime = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Flag = table.Column<bool>(type: "bit", nullable: false),
-                    UserId = table.Column<int>(type: "int", nullable: false),
-                    UserMainUserId = table.Column<int>(type: "int", nullable: false)
+                    UserMainId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_UserLoginLogs", x => x.LoginLogId);
+                    table.PrimaryKey("PK_UserLoginLogs", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_UserLoginLogs_UserMain_UserMainUserId",
-                        column: x => x.UserMainUserId,
+                        name: "FK_UserLoginLogs_UserMain_UserMainId",
+                        column: x => x.UserMainId,
                         principalTable: "UserMain",
-                        principalColumn: "UserId",
+                        principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
 
@@ -150,18 +149,18 @@ namespace LastShopping.Database.Migrations.UserAppDb
                 columns: table => new
                 {
                     RefreshToken = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    UserId = table.Column<int>(type: "int", nullable: false),
+                    UserMainId = table.Column<int>(type: "int", nullable: false),
                     CreateDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     ExpirationDate = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_UserRefreshTokenLogs", x => new { x.RefreshToken, x.UserId });
+                    table.PrimaryKey("PK_UserRefreshTokenLogs", x => new { x.RefreshToken, x.UserMainId });
                     table.ForeignKey(
-                        name: "FK_UserRefreshTokenLogs_UserMain_UserId",
-                        column: x => x.UserId,
+                        name: "FK_UserRefreshTokenLogs_UserMain_UserMainId",
+                        column: x => x.UserMainId,
                         principalTable: "UserMain",
-                        principalColumn: "UserId",
+                        principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
 
@@ -169,21 +168,20 @@ namespace LastShopping.Database.Migrations.UserAppDb
                 name: "ManagerLoginLogs",
                 columns: table => new
                 {
-                    ManagerLoginLogId = table.Column<int>(type: "int", nullable: false)
+                    Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     LoginTime = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Flag = table.Column<bool>(type: "bit", nullable: false),
-                    ManagerId = table.Column<int>(type: "int", nullable: false),
-                    ManagerMainManagerId = table.Column<int>(type: "int", nullable: false)
+                    ManagerId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_ManagerLoginLogs", x => x.ManagerLoginLogId);
+                    table.PrimaryKey("PK_ManagerLoginLogs", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_ManagerLoginLogs_ManagerMain_ManagerMainManagerId",
-                        column: x => x.ManagerMainManagerId,
+                        name: "FK_ManagerLoginLogs_ManagerMain_ManagerId",
+                        column: x => x.ManagerId,
                         principalTable: "ManagerMain",
-                        principalColumn: "ManagerId",
+                        principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
 
@@ -192,30 +190,30 @@ namespace LastShopping.Database.Migrations.UserAppDb
                 columns: table => new
                 {
                     RefreshToken = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    ManagerId = table.Column<int>(type: "int", nullable: false),
+                    ManagerMainId = table.Column<int>(type: "int", nullable: false),
                     CreateDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     ExpirationDate = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_ManagerRefreshTokenLogs", x => new { x.RefreshToken, x.ManagerId });
+                    table.PrimaryKey("PK_ManagerRefreshTokenLogs", x => new { x.RefreshToken, x.ManagerMainId });
                     table.ForeignKey(
-                        name: "FK_ManagerRefreshTokenLogs_ManagerMain_ManagerId",
-                        column: x => x.ManagerId,
+                        name: "FK_ManagerRefreshTokenLogs_ManagerMain_ManagerMainId",
+                        column: x => x.ManagerMainId,
                         principalTable: "ManagerMain",
-                        principalColumn: "ManagerId",
+                        principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_ManagerLoginLogs_Id",
+                table: "ManagerLoginLogs",
+                column: "Id");
 
             migrationBuilder.CreateIndex(
                 name: "IX_ManagerLoginLogs_ManagerId",
                 table: "ManagerLoginLogs",
                 column: "ManagerId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_ManagerLoginLogs_ManagerMainManagerId",
-                table: "ManagerLoginLogs",
-                column: "ManagerMainManagerId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_ManagerMain_Account",
@@ -228,9 +226,14 @@ namespace LastShopping.Database.Migrations.UserAppDb
                 column: "ManagerRoleId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_ManagerRefreshTokenLogs_ManagerId",
+                name: "IX_ManagerRefreshTokenLogs_ManagerMainId",
                 table: "ManagerRefreshTokenLogs",
-                column: "ManagerId");
+                column: "ManagerMainId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_ManagerRole_Id",
+                table: "ManagerRole",
+                column: "Id");
 
             migrationBuilder.CreateIndex(
                 name: "IX_ManagerRoleAuths_ManagerRoleId",
@@ -238,19 +241,24 @@ namespace LastShopping.Database.Migrations.UserAppDb
                 column: "ManagerRoleId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_ManagerRoleAuths_RouterId",
+                name: "IX_ManagerRoleAuths_ManagerRouterId",
                 table: "ManagerRoleAuths",
-                column: "RouterId");
+                column: "ManagerRouterId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_UserLoginLogs_UserId",
-                table: "UserLoginLogs",
-                column: "UserId");
+                name: "IX_ManagerRouter_Id",
+                table: "ManagerRouter",
+                column: "Id");
 
             migrationBuilder.CreateIndex(
-                name: "IX_UserLoginLogs_UserMainUserId",
+                name: "IX_UserLoginLogs_Id",
                 table: "UserLoginLogs",
-                column: "UserMainUserId");
+                column: "Id");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_UserLoginLogs_UserMainId",
+                table: "UserLoginLogs",
+                column: "UserMainId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_UserMain_Account",
@@ -258,9 +266,9 @@ namespace LastShopping.Database.Migrations.UserAppDb
                 column: "Account");
 
             migrationBuilder.CreateIndex(
-                name: "IX_UserRefreshTokenLogs_UserId",
+                name: "IX_UserRefreshTokenLogs_UserMainId",
                 table: "UserRefreshTokenLogs",
-                column: "UserId");
+                column: "UserMainId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -284,7 +292,7 @@ namespace LastShopping.Database.Migrations.UserAppDb
                 name: "ManagerMain");
 
             migrationBuilder.DropTable(
-                name: "Router");
+                name: "ManagerRouter");
 
             migrationBuilder.DropTable(
                 name: "UserMain");

@@ -1,0 +1,35 @@
+﻿@model LastShopping.Models.ManagerRole.ManagerRoleModel
+
+@{
+    ViewData["Title"] = "ManagerRole Create";
+}
+<h1>新增資料</h1>
+
+<h4>管理者身分資料表</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            @*設定 <div> 項目的目標*@
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="新增" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">回首頁</a>
+</div>
+
+@*下列標記會使用 部分標籤協助程式 來轉譯 _ValidationScriptsPartial.cshtml，由 Identity樣板所產生。*@
+@section Scripts {
+    @*轉譯部分檢視。*@
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

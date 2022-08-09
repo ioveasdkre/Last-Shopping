@@ -4,6 +4,7 @@ using LastShopping.Database.DbContextModel;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LastShopping.Database.Migrations.LastShoppingDb
 {
     [DbContext(typeof(LastShoppingDbContext))]
-    partial class LastShoppingDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220809033618_20220809UpdateComment")]
+    partial class _20220809UpdateComment
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

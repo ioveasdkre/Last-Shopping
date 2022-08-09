@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LastShopping.Database.Migrations.UserAppDb
 {
     [DbContext(typeof(UserAppDbContext))]
-    [Migration("20220718024853_20220718initial")]
-    partial class _20220718initial
+    [Migration("20220808060804_20220808UpdateIdandForeignKey")]
+    partial class _20220808UpdateIdandForeignKey
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -26,11 +26,11 @@ namespace LastShopping.Database.Migrations.UserAppDb
 
             modelBuilder.Entity("LastShopping.Database.UserAppModels.ManagerLoginLog", b =>
                 {
-                    b.Property<int>("ManagerLoginLogId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ManagerLoginLogId"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<bool>("Flag")
                         .HasColumnType("bit");
@@ -41,25 +41,22 @@ namespace LastShopping.Database.Migrations.UserAppDb
                     b.Property<int>("ManagerId")
                         .HasColumnType("int");
 
-                    b.Property<int>("ManagerMainManagerId")
-                        .HasColumnType("int");
+                    b.HasKey("Id");
 
-                    b.HasKey("ManagerLoginLogId");
+                    b.HasIndex("Id");
 
                     b.HasIndex("ManagerId");
-
-                    b.HasIndex("ManagerMainManagerId");
 
                     b.ToTable("ManagerLoginLogs");
                 });
 
             modelBuilder.Entity("LastShopping.Database.UserAppModels.ManagerMain", b =>
                 {
-                    b.Property<int>("ManagerId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ManagerId"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("Account")
                         .IsRequired()
@@ -101,7 +98,7 @@ namespace LastShopping.Database.Migrations.UserAppDb
                         .HasMaxLength(20)
                         .HasColumnType("nvarchar(20)");
 
-                    b.HasKey("ManagerId");
+                    b.HasKey("Id");
 
                     b.HasIndex("Account");
 
@@ -115,7 +112,7 @@ namespace LastShopping.Database.Migrations.UserAppDb
                     b.Property<string>("RefreshToken")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<int>("ManagerId")
+                    b.Property<int>("ManagerMainId")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("CreateDate")
@@ -124,20 +121,20 @@ namespace LastShopping.Database.Migrations.UserAppDb
                     b.Property<DateTime>("ExpirationDate")
                         .HasColumnType("datetime2");
 
-                    b.HasKey("RefreshToken", "ManagerId");
+                    b.HasKey("RefreshToken", "ManagerMainId");
 
-                    b.HasIndex("ManagerId");
+                    b.HasIndex("ManagerMainId");
 
                     b.ToTable("ManagerRefreshTokenLogs");
                 });
 
             modelBuilder.Entity("LastShopping.Database.UserAppModels.ManagerRole", b =>
                 {
-                    b.Property<int>("ManagerRoleId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ManagerRoleId"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<DateTime>("CreateDate")
                         .HasColumnType("datetime2");
@@ -150,66 +147,58 @@ namespace LastShopping.Database.Migrations.UserAppDb
                     b.Property<DateTime?>("ModifyDate")
                         .HasColumnType("datetime2");
 
-                    b.HasKey("ManagerRoleId");
+                    b.HasKey("Id");
+
+                    b.HasIndex("Id");
 
                     b.ToTable("ManagerRole");
                 });
 
             modelBuilder.Entity("LastShopping.Database.UserAppModels.ManagerRoleAuth", b =>
                 {
-                    b.Property<int>("RouterId")
-                        .HasColumnType("int");
-
                     b.Property<int>("ManagerRoleId")
                         .HasColumnType("int");
 
-                    b.Property<string>("CreateAuth")
-                        .IsRequired()
-                        .HasMaxLength(1)
-                        .HasColumnType("nchar(1)");
+                    b.Property<int>("ManagerRouterId")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("CreateAuth")
+                        .HasColumnType("bit");
 
                     b.Property<DateTime>("CreateDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("DeleteAuth")
-                        .IsRequired()
-                        .HasMaxLength(1)
-                        .HasColumnType("nchar(1)");
+                    b.Property<bool>("DeleteAuth")
+                        .HasColumnType("bit");
 
-                    b.Property<string>("ExportAuth")
-                        .IsRequired()
-                        .HasMaxLength(1)
-                        .HasColumnType("nchar(1)");
+                    b.Property<bool>("ExportAuth")
+                        .HasColumnType("bit");
 
-                    b.Property<string>("ModifyAuth")
-                        .IsRequired()
-                        .HasMaxLength(1)
-                        .HasColumnType("nchar(1)");
+                    b.Property<bool>("ModifyAuth")
+                        .HasColumnType("bit");
 
                     b.Property<DateTime?>("ModifyDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("ViewAuth")
-                        .IsRequired()
-                        .HasMaxLength(1)
-                        .HasColumnType("nchar(1)");
+                    b.Property<bool>("ViewAuth")
+                        .HasColumnType("bit");
 
-                    b.HasKey("RouterId", "ManagerRoleId");
+                    b.HasKey("ManagerRoleId", "ManagerRouterId");
 
                     b.HasIndex("ManagerRoleId");
 
-                    b.HasIndex("RouterId");
+                    b.HasIndex("ManagerRouterId");
 
                     b.ToTable("ManagerRoleAuths");
                 });
 
-            modelBuilder.Entity("LastShopping.Database.UserAppModels.Router", b =>
+            modelBuilder.Entity("LastShopping.Database.UserAppModels.ManagerRouter", b =>
                 {
-                    b.Property<int>("RouterId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("RouterId"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<bool>("Flag")
                         .HasColumnType("bit");
@@ -218,31 +207,33 @@ namespace LastShopping.Database.Migrations.UserAppDb
                         .HasColumnType("int");
 
                     b.Property<string>("Icon")
-                        .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
 
                     b.Property<string>("Link")
                         .IsRequired()
-                        .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
 
                     b.Property<string>("RouterName")
                         .IsRequired()
-                        .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
 
-                    b.HasKey("RouterId");
+                    b.HasKey("Id");
 
-                    b.ToTable("Router");
+                    b.HasIndex("Id");
+
+                    b.ToTable("ManagerRouter");
                 });
 
             modelBuilder.Entity("LastShopping.Database.UserAppModels.UserLoginLog", b =>
                 {
-                    b.Property<int>("LoginLogId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("LoginLogId"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<bool>("Flag")
                         .HasColumnType("bit");
@@ -250,28 +241,25 @@ namespace LastShopping.Database.Migrations.UserAppDb
                     b.Property<DateTime>("LoginTime")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("UserId")
+                    b.Property<int>("UserMainId")
                         .HasColumnType("int");
 
-                    b.Property<int>("UserMainUserId")
-                        .HasColumnType("int");
+                    b.HasKey("Id");
 
-                    b.HasKey("LoginLogId");
+                    b.HasIndex("Id");
 
-                    b.HasIndex("UserId");
-
-                    b.HasIndex("UserMainUserId");
+                    b.HasIndex("UserMainId");
 
                     b.ToTable("UserLoginLogs");
                 });
 
             modelBuilder.Entity("LastShopping.Database.UserAppModels.UserMain", b =>
                 {
-                    b.Property<int>("UserId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("UserId"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("Account")
                         .IsRequired()
@@ -315,7 +303,7 @@ namespace LastShopping.Database.Migrations.UserAppDb
                         .HasMaxLength(20)
                         .HasColumnType("nvarchar(20)");
 
-                    b.HasKey("UserId");
+                    b.HasKey("Id");
 
                     b.HasIndex("Account");
 
@@ -327,7 +315,7 @@ namespace LastShopping.Database.Migrations.UserAppDb
                     b.Property<string>("RefreshToken")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<int>("UserId")
+                    b.Property<int>("UserMainId")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("CreateDate")
@@ -336,9 +324,9 @@ namespace LastShopping.Database.Migrations.UserAppDb
                     b.Property<DateTime>("ExpirationDate")
                         .HasColumnType("datetime2");
 
-                    b.HasKey("RefreshToken", "UserId");
+                    b.HasKey("RefreshToken", "UserMainId");
 
-                    b.HasIndex("UserId");
+                    b.HasIndex("UserMainId");
 
                     b.ToTable("UserRefreshTokenLogs");
                 });
@@ -347,7 +335,7 @@ namespace LastShopping.Database.Migrations.UserAppDb
                 {
                     b.HasOne("LastShopping.Database.UserAppModels.ManagerMain", "ManagerMain")
                         .WithMany("ManagerLoginLogs")
-                        .HasForeignKey("ManagerMainManagerId")
+                        .HasForeignKey("ManagerId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -369,7 +357,7 @@ namespace LastShopping.Database.Migrations.UserAppDb
                 {
                     b.HasOne("LastShopping.Database.UserAppModels.ManagerMain", "ManagerMain")
                         .WithMany("ManagerRefreshTokenLogs")
-                        .HasForeignKey("ManagerId")
+                        .HasForeignKey("ManagerMainId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -384,22 +372,22 @@ namespace LastShopping.Database.Migrations.UserAppDb
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("LastShopping.Database.UserAppModels.Router", "Router")
+                    b.HasOne("LastShopping.Database.UserAppModels.ManagerRouter", "ManagerRouter")
                         .WithMany("ManagerRoleAuths")
-                        .HasForeignKey("RouterId")
+                        .HasForeignKey("ManagerRouterId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("ManagerRole");
 
-                    b.Navigation("Router");
+                    b.Navigation("ManagerRouter");
                 });
 
             modelBuilder.Entity("LastShopping.Database.UserAppModels.UserLoginLog", b =>
                 {
                     b.HasOne("LastShopping.Database.UserAppModels.UserMain", "UserMain")
                         .WithMany("UserLoginLogs")
-                        .HasForeignKey("UserMainUserId")
+                        .HasForeignKey("UserMainId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -410,7 +398,7 @@ namespace LastShopping.Database.Migrations.UserAppDb
                 {
                     b.HasOne("LastShopping.Database.UserAppModels.UserMain", "UserMain")
                         .WithMany("UserRefreshTokenLogs")
-                        .HasForeignKey("UserId")
+                        .HasForeignKey("UserMainId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -431,7 +419,7 @@ namespace LastShopping.Database.Migrations.UserAppDb
                     b.Navigation("ManagerRoleAuths");
                 });
 
-            modelBuilder.Entity("LastShopping.Database.UserAppModels.Router", b =>
+            modelBuilder.Entity("LastShopping.Database.UserAppModels.ManagerRouter", b =>
                 {
                     b.Navigation("ManagerRoleAuths");
                 });
