@@ -1,52 +1,61 @@
-﻿<!DOCTYPE html>
+﻿@{
+    ViewData["Title"] = "Shared _Layout";
+}
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>@ViewData["Title"] - LastShopping</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    @*asp-append-version 防止舊版載入*@
+    <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/lib/tocas/tocas.min.css" />
+    <link rel="stylesheet" href="~/lib/font-awesome/css/fontawesome.css" />
+    <link rel="stylesheet" href="~/lib/font-awesome/css/brands.css" />
+    <link rel="stylesheet" href="~/lib/font-awesome/css/solid.css" />
     <link rel="stylesheet" href="~/LastShopping.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+
+    <script src="~/lib/jquery/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/tocas/tocas.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">LastShopping</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="ManagerRole" asp-action="Index">管理員身分資料表</a>
-                        </li>
-                    </ul>
+    <div class="ts-app-layout is-full is-horizontal">
+        <div class="cell is-dark side-text asideMenu">
+            <div class="ts-content is-center-aligned">
+                <div class="ts-wrap is-vertical is-compact is-middle-aligned">
+                    <div class="ts-header">Yami Odymel</div>
                 </div>
             </div>
-        </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
-
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2022 - LastShopping - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            <div class=" ts-content is-dense">
+                <div class="ts-row">
+                    <div class="column is-fluid">
+                        <div class="ts-text is-bold">使用者管理</div>
+                        <div class="column"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="ts-menu is-dense is-small">
+                <a asp-area="" asp-controller="Home" asp-action="Privacy" class="item">Privacy</a>
+                <a href="#1" class="item">test2</a>
+                <a href="#1" class="item">test3</a>
+            </div>
         </div>
-    </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+        <div class="side-background">
+            <button type="button" id="collapse" class="btn btn-warning side-button"><i class="fa-solid fa-chevron-left"></i></button>
+        </div>
+        <div class="cell is-fluid is-secondary">
+            <div class="ts-space is-large">
+                <main role="main" class="ts-container is-narrow">
+                    @RenderBody()
+                </main>
+            </div>
+        </div>
+    </div>
+    @*在版面配置頁面中，以非同步方式呈現名為 name 的區段內容。*@
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

@@ -16,3 +16,18 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.side-text {
+    width: 240px;
+    color: var(--ts-white)
+}
+
+.side-button {
+    height: 20%;
+    top: 50%;
+    transform: translateY(-50%); /* ¡¹ */
+}
+
+.side-background {
+    background: var(--ts-gray-75);
+}

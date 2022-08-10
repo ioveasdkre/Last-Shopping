@@ -3,13 +3,16 @@
 @{
     ViewData["Title"] = "ManagerRole Index";
 }
+<link rel="stylesheet" href="~/lib/datatable/css/datatables.min.css"/>
+
+<script src="~/lib/datatable/js/datatables.min.js"></script>
 
 <h1>管理者身分資料列表</h1>
 
 <p>
     <a asp-action="Create">新增</a>
 </p>
-<table class="table">
+<table id="testTable" class="table">
     <thead>
         <tr>
             <th>
@@ -24,11 +27,10 @@
             <th>
                 @Html.DisplayNameFor(model => model.ModifyDate)
             </th>
-            <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
+    @foreach (var item in Model) {
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.Id)
@@ -48,6 +50,13 @@
                 <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
             </td>
         </tr>
-}
+    }
     </tbody>
 </table>
+<script src="~/js/ManagerRole/Index.js" asp-append-version="true"></script>
+<script nonce="febe20d4-fd87-447c-a128-29735e009af6" crossorigin="anonymous">
+    DataTableHelper.getDataTable({
+        tableName: "testTable",
+        targets: "nosort"
+    });
+</script>

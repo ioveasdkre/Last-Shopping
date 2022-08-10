@@ -61,9 +61,10 @@ app.Use(async (context, next) =>
     context.Response.Headers.Add("Permissions-Policy", "accelerometer=(),  autoplay=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), gyroscope=(), magnetometer=(), microphone=(), midi=(), payment=(), picture-in-picture=(), publickey-credentials-get=(), sync-xhr=self, usb=(), xr-spatial-tracking=(),  geolocation=()");
 
     // 設定CSP
+    // require-trusted-types-for 'script' 暫時不加入，因會阻擋到 jQuery
     context.Response.Headers.Add(
         "Content-Security-Policy",
-        "base-uri 'none'; child-src 'none'; connect-src 'self' wss:; default-src 'none'; font-src 'self'; form-action 'self'; frame-ancestors 'none'; frame-src 'none'; img-src 'self' data:; manifest-src 'none'; media-src 'none'; object-src 'none'; sandbox allow-downloads allow-forms allow-modals allow-same-origin allow-scripts; script-src 'none'; script-src-attr 'self' 'nonce-cm1vaw=='; script-src-elem 'self' 'nonce-cm1vaw=='; style-src 'self'; style-src-attr 'none'; style-src-elem 'self'; require-trusted-types-for 'script'; upgrade-insecure-requests; worker-src 'none';"
+        "base-uri 'none'; child-src 'none'; connect-src 'self' wss:; default-src 'none'; font-src 'self'; form-action 'self'; frame-ancestors 'none'; frame-src 'none'; img-src 'self' data:; manifest-src 'none'; media-src 'none'; object-src 'none'; sandbox allow-downloads allow-forms allow-modals allow-same-origin allow-scripts; script-src 'none'; script-src-attr 'self' 'nonce-febe20d4-fd87-447c-a128-29735e009af6'; script-src-elem 'self' 'nonce-febe20d4-fd87-447c-a128-29735e009af6'; style-src 'self'; style-src-attr 'none'; style-src-elem 'self'; upgrade-insecure-requests; worker-src 'none';"
     );
     await next();
 });
