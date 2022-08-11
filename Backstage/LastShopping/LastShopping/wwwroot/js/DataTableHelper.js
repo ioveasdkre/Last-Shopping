@@ -35,9 +35,9 @@ const DataTableHelper = (function () {
                         orderable: false, // 不進行排序功能
                     },
                     {
-                        type: "date-tw",
-                        targets: 2,
-                    },
+                        className: "dt-head-center",
+                        targets: "_all"
+                    }
                 ],
             });
         },

@@ -13,9 +13,9 @@ namespace LastShopping.VModels.ManagerRole
         public string Name { get; set; } = string.Empty;
         /// <summary>建立時間</summary>
         [Display(Name = "建立時間")]
-        public DateTime? CreateDate { get; set; }
+        public string CreateDate { get; set; } = string.Empty;
         /// <summary>修改時間</summary>
         [Display(Name = "修改時間")]
-        public DateTime? ModifyDate { get; set; }
+        public string? ModifyDate { get; set; }
     }
 }

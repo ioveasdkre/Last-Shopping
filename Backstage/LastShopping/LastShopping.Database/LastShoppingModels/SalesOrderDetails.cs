@@ -44,7 +44,7 @@ namespace LastShopping.Database.LastShoppingModels
         public DateTime? ModifyDate { get; set; }
         /// <summary>訂單狀態</summary>
         [Display(Name = "訂單狀態")]
-        [Comment("訂單狀態")]
+        [Comment("訂單狀態: 0成立訂單, 1撿貨, 2理貨, 3出貨, 4已送達, 5成立退貨, 6商品回收中, 7檢驗中, 8退款中, 9已退款")]
         public OrderStatus OrderStatus { get; set; }
         /// <summary>到貨時間</summary>
         [Display(Name = "到貨時間")]

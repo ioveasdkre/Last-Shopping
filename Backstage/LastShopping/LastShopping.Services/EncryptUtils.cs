@@ -1,6 +1,6 @@
 ﻿using System.Security.Cryptography;
 using System.Text;
-using static LastShopping.Services.Enum.EncryptEnum;
+using static LastShopping.Services.Enums.EnumEncrypt;
 
 namespace LastShopping.Services
 {

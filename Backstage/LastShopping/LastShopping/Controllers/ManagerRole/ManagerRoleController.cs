@@ -3,7 +3,7 @@ using LastShopping.Models.ManagerRole;
 using LastShopping.VModels.ManagerRole;
 using Microsoft.AspNetCore.Mvc;
 
-namespace LastShopping.Controllers
+namespace LastShopping.Controllers.ManagerRole
 {
     public class ManagerRoleController : Controller
     {
@@ -25,14 +25,37 @@ namespace LastShopping.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ManagerRoleName")] ManagerRoleModel request)
+        public async Task<IActionResult> Create([Bind("Name")] ManagerRoleModel request)
         {
-            if (ModelState.IsValid)
+            try
             {
-                await _managerRoleHelper.CreateAsync(request);
-                return RedirectToAction(nameof(Index));
+                if (ModelState.IsValid)
+                {
+                    await _managerRoleHelper.CreateAsync(request);
+                    return RedirectToAction(nameof(Index));
+                }
+            }
+            catch
+            {
+                return Problem("發生錯誤");
             }
             return View(request);
+        }
+
+        [HttpPut]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Index(int id)
+        {
+            try
+            {
+
+                await _managerRoleHelper.DeleteAsync(id);
+            }
+            catch
+            {
+                return Problem("發生錯誤");
+            }
+            return RedirectToAction(nameof(Index));
         }
     }
 }

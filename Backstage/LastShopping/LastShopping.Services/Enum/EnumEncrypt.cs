@@ -1,20 +1,21 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
-namespace LastShopping.Services.Enum
+namespace LastShopping.Services.Enums
 {
     /// <summary>加密列舉</summary>
-    public class EncryptEnum
+    public class EnumEncrypt
     {
         #region CiphertextType [ 加密類型 ]
         /// <summary>加密類型</summary>
         public enum CiphertextType
         {
             /// <summary>Base64</summary>
-            [Display(Name = "Base64")]
-            Base64 = 0,
+            [Description("Base64")]
+            Base64,
             /// <summary>16進制字符串</summary>
-            [Display(Name = "16進制字符串")]
-            Hex = 1
+            [Description("16進制字符串")]
+            Hex
         }
         #endregion
     }
