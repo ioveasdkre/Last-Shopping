@@ -12,8 +12,8 @@ namespace LastShopping.Services
         private static byte[] Encrypt { get; set; } = null!;
         /// <summary>解密</summary>
         private static string Decrypt { get; set; } = string.Empty;
-        public static readonly string AesKey = AppSettingsUtils.GetAppSettingsValue("AES", "Key");
-        public static readonly string AesIv = AppSettingsUtils.GetAppSettingsValue("AES", "Iv");
+        public static readonly string AesKeyIV = AppSettingsUtils.GetAppSettingsValue("AES", "KeyIV");
+        public static readonly string AesMixedSalt = AppSettingsUtils.GetAppSettingsValue("AES", "MixedSalt");
         #endregion
 
         #region SHA256Encrypt [ SHA256雜湊加密 ]
@@ -28,7 +28,7 @@ namespace LastShopping.Services
             // 判斷使用 AES加密
             if (aesEncrypt)
             {
-                return AESEncrypt(CipherByteArrayToString(hash, ciphertextType), AesKey, AesIv);
+                return AESEncrypt(CipherByteArrayToString(hash, ciphertextType), AesKeyIV, AesMixedSalt, 12680);
             }
 
 ;            return CipherByteArrayToString(hash, ciphertextType); // 8位元 轉 Base64字串
@@ -45,7 +45,7 @@ namespace LastShopping.Services
         /// <param name="mode">加密模式</param>
         /// <param name="ciphertextType">密文類型</param>
         /// <returns>string 加密本文</returns>
-        public static string AESEncrypt(string plainText, string key, string iv, PaddingMode padding = PaddingMode.PKCS7, CipherMode mode = CipherMode.CBC, CiphertextType ciphertextType = CiphertextType.Base64)
+        public static string AESEncrypt(string plainText, string password, string mixedSalt, int iter = 10000, PaddingMode padding = PaddingMode.PKCS7, CipherMode mode = CipherMode.CBC, CiphertextType ciphertextType = CiphertextType.Base64)
         {
             using (Aes aesAlg = Aes.Create()) // 建立 Aes對稱演算法的密碼編譯物件
             {
@@ -56,26 +56,10 @@ namespace LastShopping.Services
                 aesAlg.Padding = padding; // 對稱演算法中使用的填補模式,預設 PKCS7
                 aesAlg.Mode = mode; // 對稱演算法的作業模式,預設 CBC
 
-                // SHA256 32位元
-                // MD5 16位元
-                aesAlg.Key = SHA256.Create().ComputeHash(Encoding.UTF8.GetBytes(key)); // 對稱演算法的秘密金鑰
-
-                byte[] ivBytes = Encoding.UTF8.GetBytes(iv);
-                byte[] useIvBytes = new byte[16]; // 儲存 16byte的籃子 若超過加密會失敗
-
-                // 判斷 加密長度大於 設定的長度
-                if (ivBytes.Length > useIvBytes.Length)
-                {
-                    // Array.Copy(目標, 資料來源, 長度)
-                    Array.Copy(ivBytes, useIvBytes, useIvBytes.Length);
-                }
-                else
-                {
-                    // Array.Copy(目標, 資料來源, 長度)
-                    Array.Copy(ivBytes, useIvBytes, ivBytes.Length);
-                }
-
-                aesAlg.IV = useIvBytes; // 對稱演算法的初始化向量，如果沒有設置默認的16個0
+                byte[] salt = GenerateSalt(8);
+                List<byte> useKeyIv = PBKDF2Encrypt(password, salt, HashAlgorithmName.SHA256, iter, 48).ToList();
+                aesAlg.Key = useKeyIv.GetRange(0, 32).ToArray(); // 對稱演算法的秘密金鑰
+                aesAlg.IV = useKeyIv.GetRange(32, 16).ToArray(); // 對稱演算法的初始化向量，如果沒有設置默認的16個0
 
                 ICryptoTransform encryptor = aesAlg.CreateEncryptor(); // 建立對稱 AES加密子物件
 
@@ -83,6 +67,9 @@ namespace LastShopping.Services
                 {
                     using (CryptoStream csEncrypt = new(msEncrypt, encryptor, CryptoStreamMode.Write)) // 定義連結資料流與密碼編譯轉換的資料流
                     {
+                        msEncrypt.Write(Encoding.UTF8.GetBytes(mixedSalt), 0, 8); // 資料流最前方加入 假鹽
+                        msEncrypt.Write(salt, 0, 8); // 資料流最前方加入 真鹽
+
                         using (StreamWriter swEncrypt = new(csEncrypt)) // 實作以特定的編碼方式將字元寫入位元組資料流的 TextWriter
                         {
                             swEncrypt.Write(plainText); // 寫入資料至資料流。
@@ -106,7 +93,7 @@ namespace LastShopping.Services
         /// <param name="mode">加密模式</param>
         /// <param name="ciphertextType">密文類型</param>
         /// <returns>string 解密本文</returns>
-        public static string AESDecrypt(string cipherText, string key, string iv = "", PaddingMode padding = PaddingMode.PKCS7, CipherMode mode = CipherMode.CBC, CiphertextType ciphertextType = CiphertextType.Base64)
+        public static string AESDecrypt(string cipherText, string password, int iter = 10000, PaddingMode padding = PaddingMode.PKCS7, CipherMode mode = CipherMode.CBC, CiphertextType ciphertextType = CiphertextType.Base64)
         {
             using (Aes aesAlg = Aes.Create()) // 建立 Aes對稱演算法的密碼編譯物件
             {
@@ -116,30 +103,15 @@ namespace LastShopping.Services
                 aesAlg.BlockSize = 128;//支持的块大小
                 aesAlg.Padding = padding;//填充模式
                 aesAlg.Mode = mode;
-                // SHA256 32位元
-                // MD5 16位元
-                aesAlg.Key = SHA256.Create().ComputeHash(Encoding.UTF8.GetBytes(key)); // 對稱演算法的秘密金鑰
 
-                byte[] ivBytes = Encoding.UTF8.GetBytes(iv);
-                byte[] useIvBytes = new byte[16]; // 儲存 16byte的籃子 若超過加密會失敗
-
-                // 判斷 加密長度大於 設定的長度
-                if (ivBytes.Length > useIvBytes.Length)
-                {
-                    // Array.Copy(目標, 資料來源, 長度)
-                    Array.Copy(ivBytes, useIvBytes, useIvBytes.Length);
-                }
-                else
-                {
-                    // Array.Copy(目標, 資料來源, 長度)
-                    Array.Copy(ivBytes, useIvBytes, ivBytes.Length);
-                }
-
-                aesAlg.IV = useIvBytes; // 對稱演算法的初始化向量，如果沒有設置默認的16個0
+                byte[] salt = cipherByte.Skip(8).Take(8).ToArray(); // 忽略前面 8位數以後在讀取前 8位數 並複製到新的陣列
+                List<byte> useKeyIv = PBKDF2Encrypt(password, salt, HashAlgorithmName.SHA256, iter, 48).ToList();
+                aesAlg.Key = useKeyIv.GetRange(0, 32).ToArray(); // 對稱演算法的秘密金鑰
+                aesAlg.IV = useKeyIv.GetRange(32, 16).ToArray(); // 對稱演算法的初始化向量，如果沒有設置默認的16個0
 
                 ICryptoTransform decryptor = aesAlg.CreateDecryptor(); //建立對稱 AES解密子物件
 
-                using (MemoryStream msDecrypt = new(cipherByte)) // 存放區為記憶體的資料流
+                using (MemoryStream msDecrypt = new(cipherByte.Skip(16).ToArray())) // 存放區為記憶體的資料流
                 {
                     using (CryptoStream csDecrypt = new(msDecrypt, decryptor, CryptoStreamMode.Read)) // 實作以特定的編碼方式將字元寫入位元組資料流的 TextWriter
                     {
@@ -147,6 +119,7 @@ namespace LastShopping.Services
                         {
                             Decrypt = srDecrypt.ReadToEnd(); // 從解密流中讀取解密的字節並將它們放在一個字符串中。
                         }
+
                     }
                 }
             }
@@ -237,6 +210,28 @@ namespace LastShopping.Services
                 buffer[i / 2] = Convert.ToByte(hexContent.Substring(i, 2), 16); // 轉換成 8位元
             }
             return buffer;
+        }
+        #endregion
+
+        #region GenerateSalt [ 生成加鹽 ]
+        /// <summary>傳入整數 產生對應長度並塞入隨機數的 byte[]</summary>
+        /// <param name="saltLength">加鹽長度</param>
+        /// <returns>Byte[] 加鹽</returns>
+        private static byte[] GenerateSalt(int saltLength)
+        {
+            return RandomNumberGenerator.GetBytes(saltLength);
+        }
+        #endregion
+
+        #region GenerateKeyIV [ PBKDF2加密 ]
+        /// <summary>Base64String 轉 HexString</summary>
+        /// <param name="hexContent">hex加密字串</param>
+        /// <returns>Byte[] 加密</returns>
+        private static byte[] PBKDF2Encrypt(string password, byte[] salt, HashAlgorithmName hashAlgorithm, int iterationCount, int size)
+        {
+            // 依據 HMACSHA1 使用虛擬亂數產生器，實作密碼式的金鑰衍生功能 PBKDF2
+            return new Rfc2898DeriveBytes(Encoding.UTF8.GetBytes(password), salt, iterationCount, hashAlgorithm)
+                .GetBytes(size);
         }
         #endregion
     }

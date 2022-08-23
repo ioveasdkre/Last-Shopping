@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XwOjHc3r8so/Hsx8HhwkjE1uoxbXudHu4C9pt9r7tECvKDZLaaT6mO6LaQI5X8U/glG0loNeU2MPfW7goUi3/w==",
+  "dgSpecHash": "bh2FH6pD17SqxKezNAN6ziIMunnZf4p/xFuFnIgSflBNREKwe9vgDthuFY+LxSV/HwKG0h9Dx1tkxtpBSZdtZA==",
   "success": true,
-  "projectFilePath": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping.Services\\LastShopping.Services.csproj",
+  "projectFilePath": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping.Services\\LastShopping.Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ioveasdkre\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.1\\microsoft.extensions.configuration.6.0.1.nupkg.sha512",
     "C:\\Users\\ioveasdkre\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",

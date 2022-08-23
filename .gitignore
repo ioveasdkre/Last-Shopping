@@ -5,10 +5,10 @@
 *.userosscache
 *.sln.docstates
 
-/Backstage/LastShopping/.vs
-/Backstage/LastShopping/LastShopping/bin
-/Backstage/LastShopping/LastShopping/obj
-/Backstage/LastShopping/LastShopping.Services/bin
-/Backstage/LastShopping/LastShopping.Services/obj
-/Backstage/LastShopping/LastShopping.Database/bin
-/Backstage/LastShopping/LastShopping.Database/obj
+/MVC/LastShopping/.vs
+/MVC/LastShopping/LastShopping/bin
+/MVC/LastShopping/LastShopping/obj
+/MVC/LastShopping/LastShopping.Services/bin
+/MVC/LastShopping/LastShopping.Services/obj
+/MVC/LastShopping/LastShopping.Database/bin
+/MVC/LastShopping/LastShopping.Database/obj

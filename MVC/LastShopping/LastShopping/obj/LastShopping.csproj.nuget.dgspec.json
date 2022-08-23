@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\LastShopping.csproj": {}
+    "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\LastShopping.csproj": {}
   },
   "projects": {
-    "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping.Database\\LastShopping.Database.csproj": {
+    "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping.Database\\LastShopping.Database.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping.Database\\LastShopping.Database.csproj",
+        "projectUniqueName": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping.Database\\LastShopping.Database.csproj",
         "projectName": "LastShopping.Database",
-        "projectPath": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping.Database\\LastShopping.Database.csproj",
+        "projectPath": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping.Database\\LastShopping.Database.csproj",
         "packagesPath": "C:\\Users\\ioveasdkre\\.nuget\\packages\\",
-        "outputPath": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping.Database\\obj\\",
+        "outputPath": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping.Database\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -93,14 +93,14 @@
         }
       }
     },
-    "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping.Services\\LastShopping.Services.csproj": {
+    "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping.Services\\LastShopping.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping.Services\\LastShopping.Services.csproj",
+        "projectUniqueName": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping.Services\\LastShopping.Services.csproj",
         "projectName": "LastShopping.Services",
-        "projectPath": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping.Services\\LastShopping.Services.csproj",
+        "projectPath": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping.Services\\LastShopping.Services.csproj",
         "packagesPath": "C:\\Users\\ioveasdkre\\.nuget\\packages\\",
-        "outputPath": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping.Services\\obj\\",
+        "outputPath": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping.Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -178,14 +178,14 @@
         }
       }
     },
-    "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\LastShopping.csproj": {
+    "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\LastShopping.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\LastShopping.csproj",
+        "projectUniqueName": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\LastShopping.csproj",
         "projectName": "LastShopping",
-        "projectPath": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\LastShopping.csproj",
+        "projectPath": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\LastShopping.csproj",
         "packagesPath": "C:\\Users\\ioveasdkre\\.nuget\\packages\\",
-        "outputPath": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\obj\\",
+        "outputPath": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -208,11 +208,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping.Database\\LastShopping.Database.csproj": {
-                "projectPath": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping.Database\\LastShopping.Database.csproj"
+              "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping.Database\\LastShopping.Database.csproj": {
+                "projectPath": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping.Database\\LastShopping.Database.csproj"
               },
-              "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping.Services\\LastShopping.Services.csproj": {
-                "projectPath": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping.Services\\LastShopping.Services.csproj"
+              "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping.Services\\LastShopping.Services.csproj": {
+                "projectPath": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping.Services\\LastShopping.Services.csproj"
               }
             }
           }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "G7Ks8YxvQU6MgwHaJVPzW/XfIjmwvj09ZkuW9L2ZwQo=",
+  "Hash": "O+D+v9ul/sepY8zyEcaAflZpqLL2GMFafU46IhAyUmc=",
   "Source": "LastShopping",
   "BasePath": "_content/LastShopping",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "LastShopping\\wwwroot",
       "Source": "LastShopping",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\obj\\Debug\\net6.0\\scopedcss\\bundle\\LastShopping.styles.css",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\obj\\Debug\\net6.0\\scopedcss\\bundle\\LastShopping.styles.css",
       "SourceId": "LastShopping",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "LastShopping.styles.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\obj\\Debug\\net6.0\\scopedcss\\bundle\\LastShopping.styles.css"
+      "OriginalItemSpec": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\obj\\Debug\\net6.0\\scopedcss\\bundle\\LastShopping.styles.css"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\LastShopping.bundle.scp.css",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\LastShopping.bundle.scp.css",
       "SourceId": "LastShopping",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "LastShopping.bundle.scp.css",
       "AssetKind": "All",
@@ -48,30 +48,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\LastShopping.bundle.scp.css"
+      "OriginalItemSpec": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\LastShopping.bundle.scp.css"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\css\\DataTableHelper.css",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\css\\site.css",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
-      "BasePath": "_content/LastShopping",
-      "RelativePath": "css/DataTableHelper.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\DataTableHelper.css"
-    },
-    {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\css\\site.css",
-      "SourceId": "LastShopping",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -85,10 +68,27 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\js\\DataTableHelper.js",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\js\\AjaxHelper.js",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
+      "BasePath": "_content/LastShopping",
+      "RelativePath": "js/AjaxHelper.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\AjaxHelper.js"
+    },
+    {
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\js\\DataTableHelper.js",
+      "SourceId": "LastShopping",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "js/DataTableHelper.js",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\js\\DataTableHelper.js"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\js\\site.js",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\js\\site.js",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -119,10 +119,27 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\css\\bootstrap.css",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\js\\UiHelper.js",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
+      "BasePath": "_content/LastShopping",
+      "RelativePath": "js/UiHelper.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\UiHelper.js"
+    },
+    {
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\css\\bootstrap.css",
+      "SourceId": "LastShopping",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/bootstrap/css/bootstrap.css",
       "AssetKind": "All",
@@ -136,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap.css"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\css\\bootstrap.css.map",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\css\\bootstrap.css.map",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/bootstrap/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -153,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\css\\bootstrap.min.css",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\css\\bootstrap.min.css",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/bootstrap/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -170,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\css\\bootstrap.min.css.map",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\css\\bootstrap.min.css.map",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/bootstrap/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -187,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\css\\bootstrap.rtl.css",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\css\\bootstrap.rtl.css",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/bootstrap/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -204,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\css\\bootstrap.rtl.css.map",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\css\\bootstrap.rtl.css.map",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/bootstrap/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -221,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\css\\bootstrap.rtl.min.css",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\css\\bootstrap.rtl.min.css",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/bootstrap/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -238,10 +255,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/bootstrap/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -255,10 +272,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.css",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.css",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/bootstrap/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -272,10 +289,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.css.map",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.css.map",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/bootstrap/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -289,10 +306,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.min.css",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.min.css",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/bootstrap/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -306,10 +323,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.min.css.map",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.min.css.map",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/bootstrap/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -323,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.rtl.css",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.rtl.css",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/bootstrap/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -340,10 +357,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/bootstrap/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -357,10 +374,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/bootstrap/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -374,10 +391,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/bootstrap/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -391,10 +408,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.css",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.css",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/bootstrap/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -408,10 +425,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.css.map",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.css.map",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/bootstrap/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -425,10 +442,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.min.css",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.min.css",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/bootstrap/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -442,10 +459,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/bootstrap/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -459,10 +476,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/bootstrap/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -476,10 +493,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/bootstrap/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -493,10 +510,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/bootstrap/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -510,10 +527,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/bootstrap/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -527,10 +544,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.css",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.css",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/bootstrap/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -544,10 +561,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.css.map",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.css.map",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/bootstrap/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -561,10 +578,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.min.css",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.min.css",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/bootstrap/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -578,10 +595,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/bootstrap/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -595,10 +612,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/bootstrap/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -612,10 +629,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/bootstrap/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -629,10 +646,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/bootstrap/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -646,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/bootstrap/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -663,10 +680,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.js",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.js",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/bootstrap/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -680,10 +697,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.js.map",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.js.map",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/bootstrap/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -697,10 +714,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.min.js",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.min.js",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/bootstrap/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -714,10 +731,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/bootstrap/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -731,10 +748,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\js\\bootstrap.esm.js",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\js\\bootstrap.esm.js",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/bootstrap/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -748,10 +765,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\js\\bootstrap.esm.js.map",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\js\\bootstrap.esm.js.map",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/bootstrap/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -765,10 +782,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\js\\bootstrap.esm.min.js",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\js\\bootstrap.esm.min.js",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/bootstrap/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -782,10 +799,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\js\\bootstrap.esm.min.js.map",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\js\\bootstrap.esm.min.js.map",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/bootstrap/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -799,10 +816,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\js\\bootstrap.js",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\js\\bootstrap.js",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/bootstrap/js/bootstrap.js",
       "AssetKind": "All",
@@ -816,10 +833,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\js\\bootstrap.js"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\js\\bootstrap.js.map",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\js\\bootstrap.js.map",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/bootstrap/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -833,10 +850,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\js\\bootstrap.min.js",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\js\\bootstrap.min.js",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/bootstrap/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -850,10 +867,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\js\\bootstrap.min.js.map",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\bootstrap\\js\\bootstrap.min.js.map",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/bootstrap/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -867,10 +884,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\css\\dataTables.bootstrap.css",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\css\\dataTables.bootstrap.css",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/datatable/css/dataTables.bootstrap.css",
       "AssetKind": "All",
@@ -884,10 +901,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\datatable\\css\\dataTables.bootstrap.css"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\css\\dataTables.bootstrap.min.css",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\css\\dataTables.bootstrap.min.css",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/datatable/css/dataTables.bootstrap.min.css",
       "AssetKind": "All",
@@ -901,10 +918,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\datatable\\css\\dataTables.bootstrap.min.css"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\css\\dataTables.bootstrap4.css",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\css\\dataTables.bootstrap4.css",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/datatable/css/dataTables.bootstrap4.css",
       "AssetKind": "All",
@@ -918,10 +935,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\datatable\\css\\dataTables.bootstrap4.css"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\css\\dataTables.bootstrap4.min.css",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\css\\dataTables.bootstrap4.min.css",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/datatable/css/dataTables.bootstrap4.min.css",
       "AssetKind": "All",
@@ -935,10 +952,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\datatable\\css\\dataTables.bootstrap4.min.css"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\css\\dataTables.bootstrap5.css",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\css\\dataTables.bootstrap5.css",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/datatable/css/dataTables.bootstrap5.css",
       "AssetKind": "All",
@@ -952,10 +969,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\datatable\\css\\dataTables.bootstrap5.css"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\css\\dataTables.bootstrap5.min.css",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\css\\dataTables.bootstrap5.min.css",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/datatable/css/dataTables.bootstrap5.min.css",
       "AssetKind": "All",
@@ -969,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\datatable\\css\\dataTables.bootstrap5.min.css"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\css\\dataTables.bulma.css",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\css\\dataTables.bulma.css",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/datatable/css/dataTables.bulma.css",
       "AssetKind": "All",
@@ -986,10 +1003,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\datatable\\css\\dataTables.bulma.css"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\css\\dataTables.bulma.min.css",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\css\\dataTables.bulma.min.css",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/datatable/css/dataTables.bulma.min.css",
       "AssetKind": "All",
@@ -1003,10 +1020,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\datatable\\css\\dataTables.bulma.min.css"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\css\\datatables.css",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\css\\datatables.css",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/datatable/css/datatables.css",
       "AssetKind": "All",
@@ -1020,10 +1037,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\datatable\\css\\datatables.css"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\css\\dataTables.dataTables.css",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\css\\dataTables.dataTables.css",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/datatable/css/dataTables.dataTables.css",
       "AssetKind": "All",
@@ -1037,10 +1054,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\datatable\\css\\dataTables.dataTables.css"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\css\\dataTables.dataTables.min.css",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\css\\dataTables.dataTables.min.css",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/datatable/css/dataTables.dataTables.min.css",
       "AssetKind": "All",
@@ -1054,10 +1071,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\datatable\\css\\dataTables.dataTables.min.css"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\css\\dataTables.foundation.css",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\css\\dataTables.foundation.css",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/datatable/css/dataTables.foundation.css",
       "AssetKind": "All",
@@ -1071,10 +1088,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\datatable\\css\\dataTables.foundation.css"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\css\\dataTables.foundation.min.css",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\css\\dataTables.foundation.min.css",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/datatable/css/dataTables.foundation.min.css",
       "AssetKind": "All",
@@ -1088,10 +1105,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\datatable\\css\\dataTables.foundation.min.css"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\css\\dataTables.jqueryui.css",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\css\\dataTables.jqueryui.css",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/datatable/css/dataTables.jqueryui.css",
       "AssetKind": "All",
@@ -1105,10 +1122,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\datatable\\css\\dataTables.jqueryui.css"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\css\\dataTables.jqueryui.min.css",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\css\\dataTables.jqueryui.min.css",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/datatable/css/dataTables.jqueryui.min.css",
       "AssetKind": "All",
@@ -1122,10 +1139,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\datatable\\css\\dataTables.jqueryui.min.css"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\css\\datatables.min.css",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\css\\datatables.min.css",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/datatable/css/datatables.min.css",
       "AssetKind": "All",
@@ -1139,10 +1156,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\datatable\\css\\datatables.min.css"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\css\\dataTables.semanticui.css",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\css\\dataTables.semanticui.css",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/datatable/css/dataTables.semanticui.css",
       "AssetKind": "All",
@@ -1156,10 +1173,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\datatable\\css\\dataTables.semanticui.css"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\css\\dataTables.semanticui.min.css",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\css\\dataTables.semanticui.min.css",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/datatable/css/dataTables.semanticui.min.css",
       "AssetKind": "All",
@@ -1173,10 +1190,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\datatable\\css\\dataTables.semanticui.min.css"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\css\\jquery.dataTables.css",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\css\\jquery.dataTables.css",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/datatable/css/jquery.dataTables.css",
       "AssetKind": "All",
@@ -1190,10 +1207,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\datatable\\css\\jquery.dataTables.css"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\css\\jquery.dataTables.min.css",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\css\\jquery.dataTables.min.css",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/datatable/css/jquery.dataTables.min.css",
       "AssetKind": "All",
@@ -1207,10 +1224,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\datatable\\css\\jquery.dataTables.min.css"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\images\\sort_asc.png",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\images\\sort_asc.png",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/datatable/images/sort_asc.png",
       "AssetKind": "All",
@@ -1224,10 +1241,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\datatable\\images\\sort_asc.png"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\images\\sort_asc_disabled.png",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\images\\sort_asc_disabled.png",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/datatable/images/sort_asc_disabled.png",
       "AssetKind": "All",
@@ -1241,10 +1258,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\datatable\\images\\sort_asc_disabled.png"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\images\\sort_both.png",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\images\\sort_both.png",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/datatable/images/sort_both.png",
       "AssetKind": "All",
@@ -1258,10 +1275,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\datatable\\images\\sort_both.png"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\images\\sort_desc.png",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\images\\sort_desc.png",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/datatable/images/sort_desc.png",
       "AssetKind": "All",
@@ -1275,10 +1292,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\datatable\\images\\sort_desc.png"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\images\\sort_desc_disabled.png",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\images\\sort_desc_disabled.png",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/datatable/images/sort_desc_disabled.png",
       "AssetKind": "All",
@@ -1292,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\datatable\\images\\sort_desc_disabled.png"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\js\\dataTables.bootstrap.js",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\js\\dataTables.bootstrap.js",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/datatable/js/dataTables.bootstrap.js",
       "AssetKind": "All",
@@ -1309,10 +1326,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\datatable\\js\\dataTables.bootstrap.js"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\js\\dataTables.bootstrap.min.js",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\js\\dataTables.bootstrap.min.js",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/datatable/js/dataTables.bootstrap.min.js",
       "AssetKind": "All",
@@ -1326,10 +1343,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\datatable\\js\\dataTables.bootstrap.min.js"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\js\\dataTables.bootstrap4.js",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\js\\dataTables.bootstrap4.js",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/datatable/js/dataTables.bootstrap4.js",
       "AssetKind": "All",
@@ -1343,10 +1360,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\datatable\\js\\dataTables.bootstrap4.js"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\js\\dataTables.bootstrap4.min.js",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\js\\dataTables.bootstrap4.min.js",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/datatable/js/dataTables.bootstrap4.min.js",
       "AssetKind": "All",
@@ -1360,10 +1377,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\datatable\\js\\dataTables.bootstrap4.min.js"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\js\\dataTables.bootstrap5.js",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\js\\dataTables.bootstrap5.js",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/datatable/js/dataTables.bootstrap5.js",
       "AssetKind": "All",
@@ -1377,10 +1394,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\datatable\\js\\dataTables.bootstrap5.js"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\js\\dataTables.bootstrap5.min.js",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\js\\dataTables.bootstrap5.min.js",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/datatable/js/dataTables.bootstrap5.min.js",
       "AssetKind": "All",
@@ -1394,10 +1411,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\datatable\\js\\dataTables.bootstrap5.min.js"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\js\\dataTables.bulma.js",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\js\\dataTables.bulma.js",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/datatable/js/dataTables.bulma.js",
       "AssetKind": "All",
@@ -1411,10 +1428,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\datatable\\js\\dataTables.bulma.js"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\js\\dataTables.bulma.min.js",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\js\\dataTables.bulma.min.js",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/datatable/js/dataTables.bulma.min.js",
       "AssetKind": "All",
@@ -1428,10 +1445,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\datatable\\js\\dataTables.bulma.min.js"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\js\\dataTables.dataTables.js",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\js\\dataTables.dataTables.js",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/datatable/js/dataTables.dataTables.js",
       "AssetKind": "All",
@@ -1445,10 +1462,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\datatable\\js\\dataTables.dataTables.js"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\js\\dataTables.dataTables.min.js",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\js\\dataTables.dataTables.min.js",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/datatable/js/dataTables.dataTables.min.js",
       "AssetKind": "All",
@@ -1462,10 +1479,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\datatable\\js\\dataTables.dataTables.min.js"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\js\\dataTables.foundation.js",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\js\\dataTables.foundation.js",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/datatable/js/dataTables.foundation.js",
       "AssetKind": "All",
@@ -1479,10 +1496,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\datatable\\js\\dataTables.foundation.js"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\js\\dataTables.foundation.min.js",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\js\\dataTables.foundation.min.js",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/datatable/js/dataTables.foundation.min.js",
       "AssetKind": "All",
@@ -1496,10 +1513,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\datatable\\js\\dataTables.foundation.min.js"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\js\\dataTables.jqueryui.js",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\js\\dataTables.jqueryui.js",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/datatable/js/dataTables.jqueryui.js",
       "AssetKind": "All",
@@ -1513,10 +1530,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\datatable\\js\\dataTables.jqueryui.js"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\js\\dataTables.jqueryui.min.js",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\js\\dataTables.jqueryui.min.js",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/datatable/js/dataTables.jqueryui.min.js",
       "AssetKind": "All",
@@ -1530,10 +1547,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\datatable\\js\\dataTables.jqueryui.min.js"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\js\\datatables.js",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\js\\datatables.js",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/datatable/js/datatables.js",
       "AssetKind": "All",
@@ -1547,10 +1564,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\datatable\\js\\datatables.js"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\js\\datatables.min.js",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\js\\datatables.min.js",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/datatable/js/datatables.min.js",
       "AssetKind": "All",
@@ -1564,10 +1581,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\datatable\\js\\datatables.min.js"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\js\\dataTables.semanticui.js",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\js\\dataTables.semanticui.js",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/datatable/js/dataTables.semanticui.js",
       "AssetKind": "All",
@@ -1581,10 +1598,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\datatable\\js\\dataTables.semanticui.js"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\js\\dataTables.semanticui.min.js",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\js\\dataTables.semanticui.min.js",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/datatable/js/dataTables.semanticui.min.js",
       "AssetKind": "All",
@@ -1598,10 +1615,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\datatable\\js\\dataTables.semanticui.min.js"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\js\\jquery.dataTables.js",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\js\\jquery.dataTables.js",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/datatable/js/jquery.dataTables.js",
       "AssetKind": "All",
@@ -1615,10 +1632,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\datatable\\js\\jquery.dataTables.js"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\js\\jquery.dataTables.min.js",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\datatable\\js\\jquery.dataTables.min.js",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/datatable/js/jquery.dataTables.min.js",
       "AssetKind": "All",
@@ -1632,10 +1649,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\datatable\\js\\jquery.dataTables.min.js"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\css\\all.css",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\css\\all.css",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/font-awesome/css/all.css",
       "AssetKind": "All",
@@ -1649,10 +1666,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\css\\all.css"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\css\\all.min.css",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\css\\all.min.css",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/font-awesome/css/all.min.css",
       "AssetKind": "All",
@@ -1666,10 +1683,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\css\\all.min.css"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\css\\brands.css",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\css\\brands.css",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/font-awesome/css/brands.css",
       "AssetKind": "All",
@@ -1683,10 +1700,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\css\\brands.css"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\css\\brands.min.css",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\css\\brands.min.css",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/font-awesome/css/brands.min.css",
       "AssetKind": "All",
@@ -1700,10 +1717,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\css\\brands.min.css"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\css\\fontawesome.css",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\css\\fontawesome.css",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/font-awesome/css/fontawesome.css",
       "AssetKind": "All",
@@ -1717,10 +1734,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\css\\fontawesome.css"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\css\\fontawesome.min.css",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\css\\fontawesome.min.css",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/font-awesome/css/fontawesome.min.css",
       "AssetKind": "All",
@@ -1734,10 +1751,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\css\\fontawesome.min.css"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\css\\regular.css",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\css\\regular.css",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/font-awesome/css/regular.css",
       "AssetKind": "All",
@@ -1751,10 +1768,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\css\\regular.css"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\css\\regular.min.css",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\css\\regular.min.css",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/font-awesome/css/regular.min.css",
       "AssetKind": "All",
@@ -1768,10 +1785,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\css\\regular.min.css"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\css\\solid.css",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\css\\solid.css",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/font-awesome/css/solid.css",
       "AssetKind": "All",
@@ -1785,10 +1802,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\css\\solid.css"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\css\\solid.min.css",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\css\\solid.min.css",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/font-awesome/css/solid.min.css",
       "AssetKind": "All",
@@ -1802,10 +1819,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\css\\solid.min.css"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\css\\svg-with-js.css",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\css\\svg-with-js.css",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/font-awesome/css/svg-with-js.css",
       "AssetKind": "All",
@@ -1819,10 +1836,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\css\\svg-with-js.css"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\css\\svg-with-js.min.css",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\css\\svg-with-js.min.css",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/font-awesome/css/svg-with-js.min.css",
       "AssetKind": "All",
@@ -1836,10 +1853,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\css\\svg-with-js.min.css"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\css\\v4-font-face.css",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\css\\v4-font-face.css",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/font-awesome/css/v4-font-face.css",
       "AssetKind": "All",
@@ -1853,10 +1870,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\css\\v4-font-face.css"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\css\\v4-font-face.min.css",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\css\\v4-font-face.min.css",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/font-awesome/css/v4-font-face.min.css",
       "AssetKind": "All",
@@ -1870,10 +1887,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\css\\v4-font-face.min.css"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\css\\v4-shims.css",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\css\\v4-shims.css",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/font-awesome/css/v4-shims.css",
       "AssetKind": "All",
@@ -1887,10 +1904,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\css\\v4-shims.css"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\css\\v4-shims.min.css",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\css\\v4-shims.min.css",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/font-awesome/css/v4-shims.min.css",
       "AssetKind": "All",
@@ -1904,10 +1921,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\css\\v4-shims.min.css"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\css\\v5-font-face.css",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\css\\v5-font-face.css",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/font-awesome/css/v5-font-face.css",
       "AssetKind": "All",
@@ -1921,10 +1938,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\css\\v5-font-face.css"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\css\\v5-font-face.min.css",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\css\\v5-font-face.min.css",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/font-awesome/css/v5-font-face.min.css",
       "AssetKind": "All",
@@ -1938,10 +1955,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\css\\v5-font-face.min.css"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\js\\all.js",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\js\\all.js",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/font-awesome/js/all.js",
       "AssetKind": "All",
@@ -1955,10 +1972,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\js\\all.js"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\js\\all.min.js",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\js\\all.min.js",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/font-awesome/js/all.min.js",
       "AssetKind": "All",
@@ -1972,10 +1989,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\js\\all.min.js"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\js\\brands.js",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\js\\brands.js",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/font-awesome/js/brands.js",
       "AssetKind": "All",
@@ -1989,10 +2006,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\js\\brands.js"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\js\\brands.min.js",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\js\\brands.min.js",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/font-awesome/js/brands.min.js",
       "AssetKind": "All",
@@ -2006,10 +2023,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\js\\brands.min.js"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\js\\conflict-detection.js",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\js\\conflict-detection.js",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/font-awesome/js/conflict-detection.js",
       "AssetKind": "All",
@@ -2023,10 +2040,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\js\\conflict-detection.js"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\js\\conflict-detection.min.js",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\js\\conflict-detection.min.js",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/font-awesome/js/conflict-detection.min.js",
       "AssetKind": "All",
@@ -2040,10 +2057,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\js\\conflict-detection.min.js"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\js\\fontawesome.js",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\js\\fontawesome.js",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/font-awesome/js/fontawesome.js",
       "AssetKind": "All",
@@ -2057,10 +2074,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\js\\fontawesome.js"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\js\\fontawesome.min.js",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\js\\fontawesome.min.js",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/font-awesome/js/fontawesome.min.js",
       "AssetKind": "All",
@@ -2074,10 +2091,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\js\\fontawesome.min.js"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\js\\regular.js",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\js\\regular.js",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/font-awesome/js/regular.js",
       "AssetKind": "All",
@@ -2091,10 +2108,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\js\\regular.js"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\js\\regular.min.js",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\js\\regular.min.js",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/font-awesome/js/regular.min.js",
       "AssetKind": "All",
@@ -2108,10 +2125,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\js\\regular.min.js"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\js\\solid.js",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\js\\solid.js",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/font-awesome/js/solid.js",
       "AssetKind": "All",
@@ -2125,10 +2142,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\js\\solid.js"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\js\\solid.min.js",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\js\\solid.min.js",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/font-awesome/js/solid.min.js",
       "AssetKind": "All",
@@ -2142,10 +2159,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\js\\solid.min.js"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\js\\v4-shims.js",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\js\\v4-shims.js",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/font-awesome/js/v4-shims.js",
       "AssetKind": "All",
@@ -2159,10 +2176,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\js\\v4-shims.js"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\js\\v4-shims.min.js",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\js\\v4-shims.min.js",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/font-awesome/js/v4-shims.min.js",
       "AssetKind": "All",
@@ -2176,10 +2193,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\js\\v4-shims.min.js"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\sprites\\brands.svg",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\sprites\\brands.svg",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/font-awesome/sprites/brands.svg",
       "AssetKind": "All",
@@ -2193,10 +2210,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\sprites\\brands.svg"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\sprites\\regular.svg",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\sprites\\regular.svg",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/font-awesome/sprites/regular.svg",
       "AssetKind": "All",
@@ -2210,10 +2227,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\sprites\\regular.svg"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\sprites\\solid.svg",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\sprites\\solid.svg",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/font-awesome/sprites/solid.svg",
       "AssetKind": "All",
@@ -2227,10 +2244,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\sprites\\solid.svg"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\webfonts\\fa-brands-400.ttf",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\webfonts\\fa-brands-400.ttf",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/font-awesome/webfonts/fa-brands-400.ttf",
       "AssetKind": "All",
@@ -2244,10 +2261,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\webfonts\\fa-brands-400.ttf"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\webfonts\\fa-brands-400.woff2",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\webfonts\\fa-brands-400.woff2",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/font-awesome/webfonts/fa-brands-400.woff2",
       "AssetKind": "All",
@@ -2261,10 +2278,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\webfonts\\fa-brands-400.woff2"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\webfonts\\fa-regular-400.ttf",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\webfonts\\fa-regular-400.ttf",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/font-awesome/webfonts/fa-regular-400.ttf",
       "AssetKind": "All",
@@ -2278,10 +2295,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\webfonts\\fa-regular-400.ttf"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\webfonts\\fa-regular-400.woff2",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\webfonts\\fa-regular-400.woff2",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/font-awesome/webfonts/fa-regular-400.woff2",
       "AssetKind": "All",
@@ -2295,10 +2312,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\webfonts\\fa-regular-400.woff2"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\webfonts\\fa-solid-900.ttf",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\webfonts\\fa-solid-900.ttf",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/font-awesome/webfonts/fa-solid-900.ttf",
       "AssetKind": "All",
@@ -2312,10 +2329,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\webfonts\\fa-solid-900.ttf"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\webfonts\\fa-solid-900.woff2",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\webfonts\\fa-solid-900.woff2",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/font-awesome/webfonts/fa-solid-900.woff2",
       "AssetKind": "All",
@@ -2329,10 +2346,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\webfonts\\fa-solid-900.woff2"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\webfonts\\fa-v4compatibility.ttf",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\webfonts\\fa-v4compatibility.ttf",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/font-awesome/webfonts/fa-v4compatibility.ttf",
       "AssetKind": "All",
@@ -2346,10 +2363,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\webfonts\\fa-v4compatibility.ttf"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\webfonts\\fa-v4compatibility.woff2",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\font-awesome\\webfonts\\fa-v4compatibility.woff2",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/font-awesome/webfonts/fa-v4compatibility.woff2",
       "AssetKind": "All",
@@ -2363,10 +2380,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\webfonts\\fa-v4compatibility.woff2"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\jquery\\jquery.js",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\jquery\\jquery.js",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/jquery/jquery.js",
       "AssetKind": "All",
@@ -2380,10 +2397,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\jquery.js"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\jquery\\jquery.min.js",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\jquery\\jquery.min.js",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/jquery/jquery.min.js",
       "AssetKind": "All",
@@ -2397,10 +2414,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\jquery.min.js"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\jquery\\jquery.min.map",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\jquery\\jquery.min.map",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/jquery/jquery.min.map",
       "AssetKind": "All",
@@ -2414,10 +2431,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\jquery.min.map"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\jquery\\jquery.slim.js",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\jquery\\jquery.slim.js",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/jquery/jquery.slim.js",
       "AssetKind": "All",
@@ -2431,10 +2448,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\jquery.slim.js"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\jquery\\jquery.slim.min.js",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\jquery\\jquery.slim.min.js",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/jquery/jquery.slim.min.js",
       "AssetKind": "All",
@@ -2448,10 +2465,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\jquery.slim.min.js"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\jquery\\jquery.slim.min.map",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\jquery\\jquery.slim.min.map",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/jquery/jquery.slim.min.map",
       "AssetKind": "All",
@@ -2465,10 +2482,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\jquery.slim.min.map"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -2482,10 +2499,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -2499,10 +2516,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -2516,10 +2533,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -2533,10 +2550,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -2550,10 +2567,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -2567,10 +2584,112 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\tocas\\tocas.css",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\sweetalert2\\dist\\sweetalert2.all.js",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
+      "BasePath": "_content/LastShopping",
+      "RelativePath": "lib/sweetalert2/dist/sweetalert2.all.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\sweetalert2\\dist\\sweetalert2.all.js"
+    },
+    {
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\sweetalert2\\dist\\sweetalert2.all.min.js",
+      "SourceId": "LastShopping",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
+      "BasePath": "_content/LastShopping",
+      "RelativePath": "lib/sweetalert2/dist/sweetalert2.all.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\sweetalert2\\dist\\sweetalert2.all.min.js"
+    },
+    {
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\sweetalert2\\dist\\sweetalert2.css",
+      "SourceId": "LastShopping",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
+      "BasePath": "_content/LastShopping",
+      "RelativePath": "lib/sweetalert2/dist/sweetalert2.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\sweetalert2\\dist\\sweetalert2.css"
+    },
+    {
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\sweetalert2\\dist\\sweetalert2.js",
+      "SourceId": "LastShopping",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
+      "BasePath": "_content/LastShopping",
+      "RelativePath": "lib/sweetalert2/dist/sweetalert2.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\sweetalert2\\dist\\sweetalert2.js"
+    },
+    {
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\sweetalert2\\dist\\sweetalert2.min.css",
+      "SourceId": "LastShopping",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
+      "BasePath": "_content/LastShopping",
+      "RelativePath": "lib/sweetalert2/dist/sweetalert2.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\sweetalert2\\dist\\sweetalert2.min.css"
+    },
+    {
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\sweetalert2\\dist\\sweetalert2.min.js",
+      "SourceId": "LastShopping",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
+      "BasePath": "_content/LastShopping",
+      "RelativePath": "lib/sweetalert2/dist/sweetalert2.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\sweetalert2\\dist\\sweetalert2.min.js"
+    },
+    {
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\tocas\\tocas.css",
+      "SourceId": "LastShopping",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/tocas/tocas.css",
       "AssetKind": "All",
@@ -2584,10 +2703,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\tocas\\tocas.css"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\tocas\\tocas.js",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\tocas\\tocas.js",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/tocas/tocas.js",
       "AssetKind": "All",
@@ -2601,10 +2720,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\tocas\\tocas.js"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\tocas\\tocas.min.css",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\tocas\\tocas.min.css",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/tocas/tocas.min.css",
       "AssetKind": "All",
@@ -2618,10 +2737,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\tocas\\tocas.min.css"
     },
     {
-      "Identity": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\lib\\tocas\\tocas.min.js",
+      "Identity": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\lib\\tocas\\tocas.min.js",
       "SourceId": "LastShopping",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping\\wwwroot\\",
+      "ContentRoot": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping\\wwwroot\\",
       "BasePath": "_content/LastShopping",
       "RelativePath": "lib/tocas/tocas.min.js",
       "AssetKind": "All",

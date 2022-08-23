@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XycPzHbNszqmARwnR2fPWfKVpFALaQ3YBS17ghOHfmPWBda6jP4OXEnIUVZlczzIlji+VT3XsSOsckl8iRLjHQ==",
+  "dgSpecHash": "U2lJTHa9Oed0o/H4S6Xv+qqCrHeiC6c6pDulu6yMwEwLxzukLw0fspRGCB2ZNOZrQAyEhIIEdM1DIMYh5qc8hQ==",
   "success": true,
-  "projectFilePath": "D:\\personal\\LastShopping\\Backstage\\LastShopping\\LastShopping.Database\\LastShopping.Database.csproj",
+  "projectFilePath": "D:\\personal\\LastShopping\\MVC\\LastShopping\\LastShopping.Database\\LastShopping.Database.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ioveasdkre\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\ioveasdkre\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
