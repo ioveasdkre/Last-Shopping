@@ -57,7 +57,7 @@ namespace LastShopping.Services
                 aesAlg.Mode = mode; // 對稱演算法的作業模式,預設 CBC
 
                 byte[] salt = GenerateSalt(8);
-                List<byte> useKeyIv = PBKDF2Encrypt(password, salt, HashAlgorithmName.SHA256, iter, 48).ToList();
+                List<byte> useKeyIv = PBKDF2Encrypt(password, salt, iter, HashAlgorithmName.SHA256, 48).ToList();
                 aesAlg.Key = useKeyIv.GetRange(0, 32).ToArray(); // 對稱演算法的秘密金鑰
                 aesAlg.IV = useKeyIv.GetRange(32, 16).ToArray(); // 對稱演算法的初始化向量，如果沒有設置默認的16個0
 
@@ -105,7 +105,7 @@ namespace LastShopping.Services
                 aesAlg.Mode = mode;
 
                 byte[] salt = cipherByte.Skip(8).Take(8).ToArray(); // 忽略前面 8位數以後在讀取前 8位數 並複製到新的陣列
-                List<byte> useKeyIv = PBKDF2Encrypt(password, salt, HashAlgorithmName.SHA256, iter, 48).ToList();
+                List<byte> useKeyIv = PBKDF2Encrypt(password, salt, iter, HashAlgorithmName.SHA256, 48).ToList();
                 aesAlg.Key = useKeyIv.GetRange(0, 32).ToArray(); // 對稱演算法的秘密金鑰
                 aesAlg.IV = useKeyIv.GetRange(32, 16).ToArray(); // 對稱演算法的初始化向量，如果沒有設置默認的16個0
 
@@ -217,22 +217,20 @@ namespace LastShopping.Services
         /// <summary>傳入整數 產生對應長度並塞入隨機數的 byte[]</summary>
         /// <param name="saltLength">加鹽長度</param>
         /// <returns>Byte[] 加鹽</returns>
-        private static byte[] GenerateSalt(int saltLength)
-        {
-            return RandomNumberGenerator.GetBytes(saltLength);
-        }
+        private static byte[] GenerateSalt(int saltLength) => RandomNumberGenerator.GetBytes(saltLength);
         #endregion
 
-        #region GenerateKeyIV [ PBKDF2加密 ]
-        /// <summary>Base64String 轉 HexString</summary>
-        /// <param name="hexContent">hex加密字串</param>
+        #region PBKDF2Encrypt [ PBKDF2加密 ]
+        /// <summary>PBKDF2加密</summary>
+        /// <param name="password">密碼</param>
+        /// <param name="salt">鹽</param>
+        /// <param name="iterationCount">操作的重複次數</param>
+        /// <param name="hashAlgorithm">雜湊演算法</param>
+        /// <param name="size">讀取 Byte[]長度</param>
         /// <returns>Byte[] 加密</returns>
-        private static byte[] PBKDF2Encrypt(string password, byte[] salt, HashAlgorithmName hashAlgorithm, int iterationCount, int size)
-        {
-            // 依據 HMACSHA1 使用虛擬亂數產生器，實作密碼式的金鑰衍生功能 PBKDF2
-            return new Rfc2898DeriveBytes(Encoding.UTF8.GetBytes(password), salt, iterationCount, hashAlgorithm)
+        private static byte[] PBKDF2Encrypt(string password, byte[] salt, int iterationCount, HashAlgorithmName hashAlgorithm, int size) => 
+            new Rfc2898DeriveBytes(Encoding.UTF8.GetBytes(password), salt, iterationCount, hashAlgorithm)
                 .GetBytes(size);
-        }
         #endregion
     }
 }
