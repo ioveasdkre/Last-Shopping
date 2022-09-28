@@ -18,6 +18,7 @@ builder.Services.Scan(scan => scan
         .AsImplementedInterfaces() // 3.註冊的類別有實作界面
         .WithScopedLifetime() // 4.生命週期設定為Scoped
 );
+
 // DI注入
 builder.Services.AddScoped<AppSettingsUtils>();
 

@@ -1,13 +1,9 @@
-﻿using Dapper;
-using LastShopping.Database.DbContextModel;
+﻿using LastShopping.Database.DbContextModel;
 using LastShopping.Database.UserAppModels;
-using LastShopping.Enum;
 using LastShopping.Interface.Shared;
 using LastShopping.Models.ManagerRole;
-using LastShopping.Services;
 using LastShopping.VModels.ManagerRole;
 using Microsoft.EntityFrameworkCore;
-using System.Data.SqlClient;
 
 namespace LastShopping.Helper
 {
@@ -23,15 +19,7 @@ namespace LastShopping.Helper
 
         public async Task<List<ManagerRoleVModel>> GetAllAsync()
         {
-            string sqlConStr = AppSettingsUtils.GetConnectionString(EnumUtils.GetDescription(EnumDataBase.UserAppDb));
-            using (SqlConnection con = new(sqlConStr))
-            {
-                await con.OpenAsync();
-                string sqlStr = @"SELECT Id, Name, convert(varchar, CreateDate, 23) as CreateDate, convert(varchar, ModifyDate, 23) as ModifyDate
-                                FROM ManagerRole";
-                var result = await con.QueryAsync<ManagerRoleVModel>(sqlStr);
-                return result.ToList();
-            }
+            throw new NotImplementedException();
         }
 
         public Task<List<ManagerRoleVModel>> GetAllAsync(int? limit, int? offset, string? orderBy, string? orderDescription, string? filterStr)
