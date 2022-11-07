@@ -6,7 +6,7 @@ namespace LastShopping.Services
 {
     public class EnumUtils
     {
-        #region GetDescription [ 加密類型 ]
+        #region GetDescription [ 取列舉描述 ]
         /// <summary>取列舉描述</summary>
         /// <param name="enumValue">列舉</param>
         /// <returns>列舉描述</returns>
