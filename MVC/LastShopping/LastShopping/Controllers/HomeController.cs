@@ -2,6 +2,7 @@
 using LastShopping.Services;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using static LastShopping.Services.Enums.EnumEncrypt;
 
 namespace LastShopping.Controllers
 {
@@ -20,9 +21,10 @@ namespace LastShopping.Controllers
         public IActionResult Index()
         {
             var data = "Hello Benson 你好!!@@gwgwgdsgwg";
-            var test = EncryptUtils.AESEncrypt(data, AesKeyIV, AesMixedSalt, 12680);
-            var test2 = EncryptUtils.AESDecrypt(test, AesKeyIV, 12680);
+            var test = EncryptUtils.AESEncrypt(data, AesKeyIV, AesMixedSalt);
+            var test2 = EncryptUtils.AESDecrypt(test, AesKeyIV);
             Guid guid = Guid.NewGuid();
+            var tttt = CiphertextType.Base64;
             return View();
         }
 

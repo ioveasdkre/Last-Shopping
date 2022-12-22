@@ -28,7 +28,7 @@ namespace LastShopping.Services
             // 判斷使用 AES加密
             if (aesEncrypt)
             {
-                return AESEncrypt(CipherByteArrayToString(hash, ciphertextType), AesKeyIV, AesMixedSalt, 12680);
+                return AESEncrypt(CipherByteArrayToString(hash, ciphertextType), AesKeyIV, AesMixedSalt);
             }
 
 ;            return CipherByteArrayToString(hash, ciphertextType); // 8位元 轉 Base64字串
@@ -39,13 +39,14 @@ namespace LastShopping.Services
         #region AESEncrypt [ AES對稱加密 ]
         /// <summary>AES對稱加密</summary>
         /// <param name="plainText">本文</param>
-        /// <param name="key">密鑰</param>
-        /// <param name="iv">初始向量</param>
+        /// <param name="password">密鑰</param>
+        /// <param name="mixedSalt">假密鑰</param>
+        /// <param name="iter">操作的重複次數</param>
         /// <param name="padding">填充模式</param>
         /// <param name="mode">加密模式</param>
         /// <param name="ciphertextType">密文類型</param>
         /// <returns>string 加密本文</returns>
-        public static string AESEncrypt(string plainText, string password, string mixedSalt, int iter = 10000, PaddingMode padding = PaddingMode.PKCS7, CipherMode mode = CipherMode.CBC, CiphertextType ciphertextType = CiphertextType.Base64)
+        public static string AESEncrypt(string plainText, string password, string mixedSalt, int iter = 12680, PaddingMode padding = PaddingMode.PKCS7, CipherMode mode = CipherMode.CBC, CiphertextType ciphertextType = CiphertextType.Base64)
         {
             using (Aes aesAlg = Aes.Create()) // 建立 Aes對稱演算法的密碼編譯物件
             {
@@ -67,8 +68,9 @@ namespace LastShopping.Services
                 {
                     using (CryptoStream csEncrypt = new(msEncrypt, encryptor, CryptoStreamMode.Write)) // 定義連結資料流與密碼編譯轉換的資料流
                     {
-                        msEncrypt.Write(Encoding.UTF8.GetBytes(mixedSalt), 0, 8); // 資料流最前方加入 假鹽
-                        msEncrypt.Write(salt, 0, 8); // 資料流最前方加入 真鹽
+                        // Write(資料, 起始位置, 結束位置) 加入資料
+                        msEncrypt.Write(Encoding.UTF8.GetBytes(mixedSalt), 0, 8); // 資料流加入 假鹽
+                        msEncrypt.Write(salt, 0, 8); // 資料流加入 真鹽
 
                         using (StreamWriter swEncrypt = new(csEncrypt)) // 實作以特定的編碼方式將字元寫入位元組資料流的 TextWriter
                         {
@@ -87,13 +89,13 @@ namespace LastShopping.Services
         #region AESDecrypt [ AES對稱解密 ]
         /// <summary>AES解密</summary>
         /// <param name="cipherText">本文</param>
-        /// <param name="key">密鑰</param>
-        /// <param name="iv">初始向量</param>
+        /// <param name="password">密鑰</param>
+        /// <param name="iter">操作的重複次數</param>
         /// <param name="padding">填充模式</param>
         /// <param name="mode">加密模式</param>
         /// <param name="ciphertextType">密文類型</param>
         /// <returns>string 解密本文</returns>
-        public static string AESDecrypt(string cipherText, string password, int iter = 10000, PaddingMode padding = PaddingMode.PKCS7, CipherMode mode = CipherMode.CBC, CiphertextType ciphertextType = CiphertextType.Base64)
+        public static string AESDecrypt(string cipherText, string password, int iter = 12680, PaddingMode padding = PaddingMode.PKCS7, CipherMode mode = CipherMode.CBC, CiphertextType ciphertextType = CiphertextType.Base64)
         {
             using (Aes aesAlg = Aes.Create()) // 建立 Aes對稱演算法的密碼編譯物件
             {
